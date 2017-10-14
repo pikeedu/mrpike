@@ -5,19 +5,16 @@
     <title>Pike | Home</title>
 
     {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'eng/css/index.css' %}">
     <link rel="stylesheet" href="{% static 'eng/css/bootstrap.min.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'eng/css/style.css' %}"> -->
-    <link rel="stylesheet" href="{% static 'eng/css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'eng/javascript/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'eng/javascript/bootstrap.js' %}"></script>
     <script type="text/javascript" src="{% static 'eng/javascript/index.js' %}"></script>
 
-
   </head>
-  <body>
+  <body id="index">
     <header>
       <div id="top_banner" class="row">
         <div class="col-md-6">
@@ -55,16 +52,38 @@
         </div>
       </div>
 
-        <div class="row">
+      <div class="row">
         <div class="col-md-12">
-          <nav id="top_navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a id="nav_logo" class="navbar-brand" href="#">Pike <br>Education</a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> -->
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">He-Zuo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+
+          <!--  Responsive Nav Bar To be completed-->
+
+          <!-- <nav id="top_navbar" class="navbar navbar-expand-lg nav-fill navbar-dark bg-primary">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav nav-fill">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -76,7 +95,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Service
+                    Service
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Action</a>
@@ -86,10 +105,11 @@
                 </li>
               </ul>
             </div>
+          </nav> -->
+        </div>
+      </div>
 
-          </nav>
-        </div>
-        </div>
+
 
     </header>
     <br>
@@ -101,7 +121,7 @@
       <a class="testing" href="/aboutus">About us</a>
 
       <hr>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%; margin: 0 auto">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 70%; margin: 0 auto">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -147,159 +167,111 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <br><br><br>
+      <br><br><br>
 
-      <h1>Content</h1>
-      <h1>Content</h1>
-      <h1>Content</h1>
-      <h1>Content</h1>
-      <h1>Content</h1>
-      <h1>Content</h1>
-      <h1>Content</h1>
-      <section>
-        <div class="hex_row_odd">
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('http://www.sub5zero.com/wp-content/uploads/2016/08/surfing-1050x525.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
+      <div class="why_us">
+        <h1>Why Mr Pike</h1>
+        <hr>
+        <br>
+        <div class="row">
+          <div class="col">
+            <div class="circle-2">
+              <img src="./../static/eng/images/why_us_1.jpg" alt="why_us_1" class="img-circle">
+              <div class="text-2">
+                <h3>Title</h3>
+                <p>Detail</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="circle-2">
+              <img src="./../static/eng/images/why_us_2.jpg" alt="why_us_2" class="img-circle">
+              <div class="text-2">
+                <h3>Title</h3>
+                <p>Detail</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="circle-2">
+              <img src="./../static/eng/images/why_us_3.jpg" alt="why_us_3" class="img-circle">
+              <div class="text-2">
+                <h3>Title</h3>
+                <p>Detail</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="circle-2">
+              <img id="circle-4" src="./../static/eng/images/why_us_4.jpg" alt="why_us_4" class="img-circle">
+              <div class="text-2">
+                <h3>Title</h3>
+                <p>Detail</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <hr>
 
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('https://25.media.tumblr.com/tumblr_mb3lh6abw91rg4gq5o1_500.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
+      <div class="">
+        <div class="animation-element slide-left testimonial">
+          <div class="header">
+            <div class="left">
+              <img src="https://drive.google.com/uc?export=download&id=0B7UPM0QugWUjTURta0pyMEtoUmc" />
+            </div>
+            <div class="right">
+              <h3>Mark Jamerson</h3>
+              <h4>CEO - Generic Business</h4>
+            </div>
+          </div>
+          <div class="content"><i class="fa fa-quote-left"></i> We entered into a 12 month period of service with this company in the hopes to improve our returns. After this period we have a return of double our initial investment..
+            <i class="fa fa-quote-right"></i>
+          </div>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <!--testimonial four -->
+        <div class="animation-element slide-left testimonial">
+          <div class="header">
+            <div class="left">
+              <img src="https://drive.google.com/uc?export=download&id=0B7UPM0QugWUjb1dxcGZEYUc0Z3M" />
+            </div>
+            <div class="right">
+              <h3>Susan Hilton</h3>
+              <h4>Financial Officer - People Tech</h4>
+            </div>
+          </div>
+          <div class="content"><i class="fa fa-quote-left"></i> Our involvement in this company has been mutually beneficial. We were hoping for slightly higher returns, however the current level of returns are sufficient..
+            <i class="fa fa-quote-right"></i>
+          </div>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+        </div>
+      </div>
 
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('http://www.visitmexico.com/work/models/VisitMexico30/WebPage/Ensenada_la_cuna_del_surf/photoEscudo_Ensenada_la_cuna_del_surf_surfensenadaheader.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
-        </div><!--/hex_row_even-->
-
-        <div class="hex_row_even">
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('https://static.tumblr.com/6pl87f7/eVqmduuh2/22948aee82dd11e18cf91231380fd29b_7.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
-
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('http://www.rawstory.com/wp-content/uploads/2015/05/A-man-surfing-Shutterstock-800x430.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
-
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('https://img.grouponcdn.com/deal/pZW1AwwkaLpzZ16v6Sv1/kM-2048x1229/v1/c700x420.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
-
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('http://www.destination360.com/europe/portugal/images/s/portugal-surf.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
-
-        </div><!--/hex_row_even-->
-
-        <div class="hex_row_odd">
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('http://cdn1.theinertia.com/wp-content/uploads/2012/07/11.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
-
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('http://www.sanclementeguide.com/img/surfing-san-clemente.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
-
-          <div class="center">
-            <div class="hexagon">
-              <div class="hex1">
-                <div class="hex2" style="background: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/1999_-_Surf_%C3%A0_Waikiki_Beach_Honolulu_Hawa%C3%AF.jpg') center no-repeat">
-                  <div class="desc">
-                    <h2>Welcome this is an epic title</h2>
-                    <p>website</p>
-                  </div>
-                </div><!--/hex2-->
-              </div><!--/hex1-->
-            </div><!--/hexagon-->
-          </div><!--/center-->
-        </div><!--/hex_row_even-->
-
-      </section>
+      <hr>
     </main>
     <footer>
+      <h3>This is footer</h3>
+      <h3>This is footer</h3>
+      <h3>This is footer</h3>
+      <h3>This is footer</h3>
     </footer>
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
   </body>

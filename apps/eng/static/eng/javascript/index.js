@@ -4,30 +4,40 @@ $(document).ready(function(){
   });
   $('.dropdown-toggle').dropdown();
 
-  var color = 'one';
-  var counter = 0;
-  $('.desc').hide();
-  $('.hexagon').hover(
-    function() {
-      $(this).find('.desc').fadeIn('fast');
-      counter++;
-      if (counter === 0) {
-        color = 'base';
-      } else if (counter === 1) {
-        color = 'one';
-      } else if (counter === 2) {
-        color = 'two';
-      } else if (counter === 3) {
-        color = 'three';
-      } else if (counter >= 4){
-        counter = 0 ;
-        color = 'base';
+
+  var animation_elements = $.find('.animation-element');
+  var web_window = $(window);
+
+  //check to see if any animation containers are currently in view
+  function check_if_in_view() {
+    //get current window information
+    var window_height = web_window.height();
+    var window_top_position = web_window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    //iterate through elements to see if its in view
+    $.each(animation_elements, function() {
+
+      //get the element sinformation
+      var element = $(this);
+      var element_height = $(element).outerHeight();
+      var element_top_position = $(element).offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+      if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+        element.addClass('in-view');
+      } else {
+        element.removeClass('in-view');
       }
-      $(this).find('.desc').addClass(color);
-    },
-    function() {
-      $(this).find('.desc').fadeOut('fast', function() {
-        $(this).removeClass(color);
-      });
     });
+
+  }
+
+  //on or scroll, detect elements in view
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+  $(window).trigger('scroll');
 })
