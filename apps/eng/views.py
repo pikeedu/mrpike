@@ -9,3 +9,9 @@ def index(request):
 
 def aboutus(request):
     return render(request, 'eng/aboutus.html')
+
+def service(request):
+    return render(request, 'eng/service.html')
+
+def tour(request):
+    return render(request, 'eng/tour.html')

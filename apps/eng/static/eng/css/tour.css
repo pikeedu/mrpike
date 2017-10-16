@@ -1,0 +1,103 @@
+*{
+  border: 1px solid lightpink;
+}
+
+.tour_head{
+  position: relative;
+  width: 100%;
+}
+
+h1{
+  position: relative;
+  top: -150px;
+  width: 100%;
+  /*color:white;*/
+  padding: 20px;
+  z-index: 1;
+}
+.col{
+  text-align: center;
+}
+
+#theimage{
+  width: 85%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  height: 600px;
+}
+
+.info{
+  width:85%;
+  font-size: 16px;
+  text-align: justify;
+  color: red;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.post1{
+    position: relative;
+    left: -700px;
+    background: black;
+    margin: 25px 0;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.post1.shift1 {
+  opacity: 1;
+  left: 0;
+  transition: all 2s ease;
+}
+
+.post2 {
+    position: relative;
+    right: -700px;
+    background: black;
+    margin: 25px 0;
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.post2.shift2{
+    opacity: 1;
+    right: 0;
+    transition: all 3s ease;
+}
+
+.post3 {
+    position: relative;
+    left: -700px;
+    background: black;
+    margin: 25px 0;
+    opacity: 0;
+    transition: all 4s ease;
+}
+
+.post3.shift3{
+    opacity: 1;
+    left: 0;
+    transition: all 4s ease;
+}
+
+.post4 {
+    position: relative;
+    right: -700px;
+    background: black;
+    margin: 25px 0;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.post4.shift4{
+    opacity: 1;
+    right: 0;
+    transition: all 1s ease;
+}
+
+#esl{
+  width: 85%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  height: 600px;
+}

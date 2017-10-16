@@ -4,6 +4,8 @@ $(document).ready(function(){
   });
   $('.dropdown-toggle').dropdown();
 
+  // jakljdfks
+  // jkljkljk
 
   var animation_elements = $.find('.animation-element');
   var web_window = $(window);
@@ -40,4 +42,16 @@ $(document).ready(function(){
     })
     //trigger our scroll event on initial load
   $(window).trigger('scroll');
+
+  dksakjkasjldkjakljdaskljdkas
+  kljkljk
+  jkljkljklkkj
+  jkljkljklkkj
+
 })
+
+// $(window).scroll(function() {
+//     if ($(".post").position().top < $(document).scrollTop() + $(window).height()) {
+//         $(".post").addClass("shift")
+//     };
+// });
