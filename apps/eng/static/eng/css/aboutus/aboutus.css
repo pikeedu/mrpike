@@ -36,9 +36,9 @@
 
 /* Section - Parallax */
 /**************************/
-#parallax-world-of-ugg .parallax-one {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../images/aboutus/parallax_1.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
-#parallax-world-of-ugg .parallax-two {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../images/aboutus/parallax_2.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
-#parallax-world-of-ugg .parallax-three {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../images/aboutus/parallax_3.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-one {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../../images/aboutus/parallax_1.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../../images/aboutus/parallax_2.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 300px; padding-bottom: 300px; overflow: hidden; position: relative; width: 100%; background-image: url(../../images/aboutus/parallax_3.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
 
 /* Extras */
 /**************************/

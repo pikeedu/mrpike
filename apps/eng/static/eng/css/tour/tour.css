@@ -50,19 +50,19 @@ h1{
   transition: all 2s ease;
 }
 
-.post2 {
+.post2{
     position: relative;
     right: -700px;
     background: black;
     margin: 25px 0;
     opacity: 0;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .post2.shift2{
     opacity: 1;
     right: 0;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .post3 {
@@ -71,13 +71,13 @@ h1{
     background: black;
     margin: 25px 0;
     opacity: 0;
-    transition: all 4s ease;
+    transition: all 2s ease;
 }
 
 .post3.shift3{
     opacity: 1;
     left: 0;
-    transition: all 4s ease;
+    transition: all 2s ease;
 }
 
 .post4 {
@@ -86,13 +86,13 @@ h1{
     background: black;
     margin: 25px 0;
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 
 .post4.shift4{
     opacity: 1;
     right: 0;
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 
 #esl{
