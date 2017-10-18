@@ -112,21 +112,24 @@
 }
 
 .img-circle{
-  width:400px;
-  height: 400px;
+  width:200px;
+  height: 200px;
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
   float: left;
+  margin: auto;
   position: relative;
 }
 
 .circle-2 .text-2 {
-  width: 400px;
-  height: 400px;
+  /*margin: auto;*/
+  width: 200px;
+  height: 200px;
   top: 0;
   position: absolute;
+  /*position: relative;*/
   background: rgba(255, 255, 255, 0.75);
   border-radius: 50%;
   -webkit-transform: scale(0);
@@ -136,6 +139,7 @@
 }
 
 .circle-2:hover .text-2 {
+  /*margin: auto;*/
   -webkit-transform: scale(1);
   transform: scale(1);
   background: rgba(255, 255, 255, 0.75);
@@ -146,7 +150,7 @@
 .text-2 h3 {
   font-size: 20px;
   text-align: center;
-  margin: 120px 20px 0 20px;
+  margin: 50px 20px 0 20px;
   padding-bottom: 5px;
   border-bottom: 3px double #000000;
 }

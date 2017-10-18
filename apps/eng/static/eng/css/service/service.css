@@ -2,23 +2,27 @@
   border: 1px solid lightpink;
 }
 
-@import 'https://fonts.googleapis.com/css?family=Roboto';
+.side-menu{
+  /*min-height: 100px;*/
+  /*min-height: 1000px;*/
+}
+/*@import 'https://fonts.googleapis.com/css?family=Roboto';
 .side-menu {
   font-family: 'Roboto', sans-serif;
   position: relative;
-  /*position: absolute;*/
-  /*top: 0;*/
   left: 0;
   margin: 0;
   padding: 0;
+  width:auto;
+  overflow: hidden;*/
   /*height: 100%;*/
   /*width: 60px;*/
-  width:auto;
-  list-style-type: none;
+  /*list-style-type: none;*/
   /*background: lightgreen;*/
-  overflow: hidden;
+  /*position: absolute;*/
+  /*top: 0;*/
   /*transition: width .5s;*/
-}
+/*}*/
 
 /*.side-menu:hover {
   width: 300px;
@@ -26,28 +30,28 @@
 
 .sub-menu{
   /*list-style: none;*/
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 
 /*.side-menu li {
   width: 450px;
 }*/
 
-.side-menu li span {
+/*.side-menu li span {
   font-size: 1rem;
   margin: 20px 30px 0 22px;
-}
+}*/
 
 .side-menu li a {
-  display: block;
-  font-size: .9rem;
-  text-decoration: none;
+  /*display: block;*/
+  /*font-size: .9rem;*/
+  /*text-decoration: none;*/
   /*color: #FFF;*/
-  height: 60px;
+  /*height: 60px;*/
 }
 
-.side-menu li a:hover,
-.side-menu li:first-child a {
+/*.side-menu li a:hover,*/
+/*.side-menu li:first-child a {*/
   /*background: #14081d;*/
-  display: block;
-}
+  /*display: block;*/
+/*}*/
