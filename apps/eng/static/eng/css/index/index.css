@@ -107,7 +107,6 @@
 .why_us{
   width: 100%;
   text-align: center;
-  background-color: lightpink;
   padding: 5%;
 }
 
@@ -160,27 +159,6 @@
   text-align: center;
 }
 
-
-/*Testing */
-#testing{
-  color:green
-}
-
-.testing{
-  color: orange;
-}
-
-#text-4{
-  display: none;
-}
-
-
-/*asdhjkashjkashdkjhsajkhdsakjhdsa*/
-/*asdhjkashjkashdkjhsajkhdsakjhdsa*/
-/*asdhjkashjkashdkjhsajkhdsakjhdsa*/
-/*asdhjkashjkashdkjhsajkhdsakjhdsa*/
-/*asdhjkashjkashdkjhsajkhdsakjhdsa*/
-/*asdhjkashjkashdkjhsajkhdsakjhdsa*/
 .post-no{
   margin:25px 0;
 }
@@ -190,13 +168,13 @@
     left: -700px;
     margin: 25px 0;
     opacity: 0;
-    transition: all 3s ease;
+    transition: all 5s ease;
 }
 
 .post-left.shift-left {
   opacity: 1;
   left: 0;
-  transition: all 3s ease;
+  transition: all 5s ease;
 }
 
 .post-right{
@@ -204,13 +182,13 @@
     right: -700px;
     margin: 25px 0;
     opacity: 0;
-    transition: all 3s ease;
+    transition: all 5s ease;
 }
 
 .post-right.shift-right{
     opacity: 1;
     right: 0;
-    transition: all 3s ease;
+    transition: all 5s ease;
 }
 
 .index_slide{

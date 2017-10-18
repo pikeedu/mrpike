@@ -15,15 +15,15 @@ h1{
   padding: 20px;
   z-index: 1;
 }
-.col{
+.col-md-5{
   text-align: center;
 }
 
 #theimage{
-  width: 85%;
+  width: 90%;
   border-radius: 5px;
   box-shadow: 10px 10px 5px #888888;
-  height: 600px;
+  height: 400px;
 }
 
 .info{

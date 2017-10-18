@@ -13,3 +13,9 @@ def service(request):
 
 def tour(request):
     return render(request, 'eng/tour/tour.html')
+
+def bootcamp(request):
+    return render(request, 'eng/bootcamp/bootcamp.html')
+
+def error(request):
+    return render(request, 'eng/error/error.html')
