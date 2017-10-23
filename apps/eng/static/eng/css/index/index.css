@@ -81,27 +81,17 @@
 }
 
 /* NavBar*/
-.nav-item .nav-link{
-  height: 100px;
-  font-size: 30px;
-  background-color: lightgreen;
+.navbar-nav{
+  width:100%;
 }
 
-.nav-link{
-  padding-top: 8%;
-}
-
-.nav-item :hover{
-  border-bottom: 3px solid lightblue;
-}
-
-#nav_logo{
-  color: #0fb8af;
+.nav-item{
+  display: inline-block;
   text-align: center;
-  font-style: italic;
-  font-family: inherit;
-  font-size: 25px;
+  width: 15%;
+  margin: auto;
 }
+
 
 /* Why Us Section*/
 .why_us{
@@ -111,8 +101,8 @@
 }
 
 .img-circle{
-  width:200px;
-  height: 200px;
+  width:250px;
+  height: 250px;
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
@@ -124,8 +114,8 @@
 
 .circle-2 .text-2 {
   /*margin: auto;*/
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   top: 0;
   position: absolute;
   /*position: relative;*/
@@ -168,13 +158,13 @@
     left: -700px;
     margin: 25px 0;
     opacity: 0;
-    transition: all 5s ease;
+    transition: all 3s ease;
 }
 
 .post-left.shift-left {
   opacity: 1;
   left: 0;
-  transition: all 5s ease;
+  transition: all 3s ease;
 }
 
 .post-right{
@@ -182,13 +172,13 @@
     right: -700px;
     margin: 25px 0;
     opacity: 0;
-    transition: all 5s ease;
+    transition: all 3s ease;
 }
 
 .post-right.shift-right{
     opacity: 1;
     right: 0;
-    transition: all 5s ease;
+    transition: all 3s ease;
 }
 
 .index_slide{

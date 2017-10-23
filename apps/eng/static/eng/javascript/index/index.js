@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.carousel').carousel({
-    interval: 2000
+    interval: 1500
   });
   $('.dropdown-toggle').dropdown();
 

@@ -2,6 +2,17 @@
   border: 1px solid lightpink;
 }
 
+.navbar-nav{
+  width:100%;
+}
+
+.nav-item{
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+  margin: auto;
+}
+
 .tour_head{
   position: relative;
   width: 100%;
@@ -71,13 +82,13 @@ h1{
     background: black;
     margin: 25px 0;
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 3s ease;
 }
 
 .post3.shift3{
     opacity: 1;
     left: 0;
-    transition: all 2s ease;
+    transition: all 3s ease;
 }
 
 .post4 {
@@ -86,18 +97,18 @@ h1{
     background: black;
     margin: 25px 0;
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 4s ease;
 }
 
 .post4.shift4{
     opacity: 1;
     right: 0;
-    transition: all 2s ease;
+    transition: all 4s ease;
 }
-
+/*
 #esl{
   width: 85%;
   border-radius: 5px;
   box-shadow: 10px 10px 5px #888888;
   height: 600px;
-}
+}*/

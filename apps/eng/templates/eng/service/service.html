@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="{% static 'eng/css/service/service.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'eng/css/master/materialize.min.css' %}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{% static 'eng/javascript/master/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'eng/javascript/master/materialize.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'eng/javascript/service/service.js' %}"></script>
   </head>
   <body>
     <header>
@@ -53,134 +48,196 @@
 
       <div class="row">
         <div class="col-md-12">
-          <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/aboutus">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/tour">Tour</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">He-Zuo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link  active" href="/service">Service</a>
+                <a class="nav-item nav-link" href="/tour">Tour</a>
+                <a class="nav-item nav-link" href="/bootcamp">Bootcamp</a>
+                <a class="nav-item nav-link" href="/aboutus">About Us</a>
+                <a class="nav-item nav-link" href="contact">Contact Us</a>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
-    <main>
-      <div class="row">
-        <div class="col-md-2">
-          <ul id="sidebar" class="side-menu section table-of-contents">
-            <h4>Our Service</h4>
-            <li><a href="#application">Application</a></li>
-              <ul class="sub-menu section table-of-contents">
-                <li><a href="#middle_and_high_school">Middle & High School</a></li>
-                <li><a href="#language_school">Language School</a></li>
-                <li><a href="#college">College</a></li>
-                <li><a href="#university">University</a></li>
-                <li><a href="#higher_degree">Higher Degree</a></li>
-              </ul>
-            <li><a href="#local_student">Local Student</a></li>
-              <ul class="sub-menu section table-of-contents">
-                <li><a href="#i-20">I-20</a></li>
-                <li><a href="#homestay">Homestay</a></li>
-                <li><a href="#ucr">UCR</a></li>
-                <li><a href="#classes">TOEFL/GRE/SAT Class</a></li>
-                <li><a href="#ap">High School AP</a></li>
-                <li><a href="#visa">VISA Status</a></li>
-              </ul>
-          </ul>
-        </div>
 
-        <div class="col-md-10">
-          <div class="row">
-            <div class="col-md-1">
+    <section>
+      <aside class="">
+        <nav id="navbar-example3" class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">Our Service</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#application">Application</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#middle_and_high_school">Middle & High School</a>
+              <a class="nav-link ml-3 my-1" href="#language_school">Language School</a>
+              <a class="nav-link ml-3 my-1" href="#college">College</a>
+              <a class="nav-link ml-3 my-1" href="#university">Univeristy</a>
+              <a class="nav-link ml-3 my-1" href="#higher_degree">Higher Degree</a>
+            </nav>
+            <a class="nav-link" href="#local_student">Local Student</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#visa">VISA</a>
+              <a class="nav-link ml-3 my-1" href="#i-20">I-20</a>
+              <a class="nav-link ml-3 my-1" href="#homestay">HomeStay</a>
+              <a class="nav-link ml-3 my-1" href="#ucr">UCR</a>
+              <a class="nav-link ml-3 my-1" href="#classes">TOEFL/GRE/SAT Classes</a>
+              <a class="nav-link ml-3 my-1" href="#ap">High School AP</a>
+            </nav>
+          </nav>
+        </nav>
+      </aside>
+
+      <main>
+        <article class="main">
+          <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+              <div id="application" class="rows">
+                <div class="col-md-12 service_detail">
+                  <h3>Application</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+              </div>
+              <div id="middle_and_high_school" class="row service_section">
+                <div class="col-md-4">
+                  <img class="service_image" src="./../../static/eng/images/service/m_h_school.jpg" alt="application">
+                </div>
+                <div class="col-md-8 service_detail">
+                  <h3>Middle & High School</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
             </div>
-
-            <div class="col-md-10">
-              <div id="application" class="section scrollspy" style="height:300px; background-color:grey">
-                <h1>Application</h1>
+            <div id="language_school" class="row service_section">
+              <div class="col-md-4 service_detail">
+                <h3>Language School</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
-              <div id="middle_and_high_school" class="section scrollspy" style="height:300px; background-color:lime">
-                <h4>Middle School or High School</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/language_school.jpg" alt="application">
               </div>
-              <div id="language_school" class="section scrollspy" style="height:300px; background-color:orange">
-                <h4>Language School Application</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-
-              </div>
-              <div id="college"  class="section scrollspy" style="height:300px; background-color:pink">
-                <h4>College Application</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="university" class="section scrollspy" style="height:300px; background-color:yellow">
-                <h4>University Application</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="higher_degree" class="section scrollspy" style="height:300px; background-color:purple">
-                <h4>Higher Degree Application</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="local_student" class="section scrollspy" style="height:300px; background-color:lime">
-                <h4>Local Student Service</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="i-20" class="section scrollspy" style="height:300px; background-color:orange">
-                <h4>Higher Degree Application</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="homestay" class="section scrollspy" style="height:300px; background-color:yello">
-                <h4>Home Stay</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="ucr" class="section scrollspy" style="height:300px; background-color:lightblue">
-                <h4>UCR Program</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="classes" class="section scrollspy" style="height:300px; background-color:lightpink">
-                <h4>TOEFL GRE SAT</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="ap" class="section scrollspy" style="height:300px; background-color:aqua">
-                <h4>High School AP</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-              </div>
-              <div id="visa" class="section scrollspy" style="height:300px; background-color:brown">
-                <h4>Visa Stutas</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+              <div class="col-md-4 service_detail">
+                <h3>ESL</h3>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               </div>
             </div>
-            <div class="col-md-1">
+            <div id="college" class="row service_section">
+              <div class="col-md-8 service_detail">
+                <h3>College</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/college.jpg" alt="application">
+              </div>
             </div>
+            <div id="university"  class="row service_section">
+              <div class="col-md-4 service_detail">
+                <h3>University</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/university.jpg" alt="application">
+              </div>
+              <div class="col-md-4 service_detail">
+                <h3>University</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            <div id="higher_degree" class="row service_section">
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/higher_degree.jpg" alt="application">
+              </div>
+              <div class="col-md-8 service_detail">
+                <h3>Higher Degree</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            <div id="local_student" class="row service_section">
+              <div class="col-md-12 service_detail">
+                <h3>Local Student Service</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            <div id="visa" class="row service_section">
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/visa.jpg" alt="application">
+              </div>
+              <div class="col-md-8 service_detail">
+                <h3>Visa</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            <div id="i-20" class="row service_section">
+              <div class="col-md-4 service_detail">
+                <h3>I-20</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/i-20.jpg" alt="application">
+              </div>
+              <div class="col-md-4 service_detail">
+                <h3>I-20</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            <div id="homestay" class="row service_section">
+              <div class="col-md-8 service_detail">
+                <h3>Home Stay</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+              <div class="col-4">
+                <img class="service_image" src="./../../static/eng/images/service/homestay.jpg" alt="application">
+              </div>
+            </div>
+            <div id="ucr" class="row service_section">
+              <div class="col-md-4 service_detail">
+                <h3>UCR Program</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/ucr.jpg" alt="application">
+              </div>
+              <div class="col-md-4 service_detail">
+                <h3>UCR Program</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            <div id="classes" class="row service_section">
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/classes.jpg" alt="application">
+              </div>
+              <div class="col-md-8 service_detail">
+                <h3>Classes</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            <div id="ap" class="row service_section">
+              <div class="col-md-4 service_detail">
+                <h3>AP</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+              <div class="col-md-4">
+                <img class="service_image" src="./../../static/eng/images/service/ap.jpg" alt="application">
+              </div>
+              <div class="col-md-4 service_detail">
+                <h3>AP</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+
           </div>
-        </div>
-      </div>
-    </main>
+        </article>
+      </main>
+    </section>
+
     <footer>
 
     </footer>
-    <script type="text/javascript">
-    var sidebar = document.querySelector('#sidebar');
-
-
-    window.addEventListener('scroll', function() {
-
-        if(window.scrollY >= offset) {
-            sidebar.style.marginTop = window.scrollY - 150 + 'px';
-        } else {
-            sidebar.style.marginTop = '0px';
-        }
-    });
-    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script type="text/javascript" src="{% static 'eng/javascript/master/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'eng/javascript/service/service.js' %}"></script>
   </body>
 </html>
