@@ -93,6 +93,10 @@
 }
 
 /* Carousel */
+#the_carousel{
+  height:500px;  
+}
+
 .index_carousel{
   top:10%;
 }

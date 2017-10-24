@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.carousel').carousel({
     interval: 1500
   });
-  $('.dropdown-toggle').dropdown();
+  // $('.dropdown-toggle').dropdown();
 
 })
 

@@ -5,9 +5,6 @@ from django.shortcuts import render, redirect, HttpResponse
 def index(request):
     return render(request, 'eng/index/index.html')
 
-# def cn(request):
-#     return render (request, './../cn/templates/cn/index.html')
-
 def aboutus(request):
     return render(request, 'eng/aboutus/aboutus.html')
 
@@ -24,5 +21,8 @@ def bootcamp(request):
 def contact(request):
     return render(request, 'eng/contact/contact.html')
 
-# def error(request):
-#     return render(request, 'eng/error/error.html')
+def error(request):
+    return render(request, 'eng/error/error.html')
+
+def cn(request):
+    return render(request, './../cn/templates/cn/index/index.html')
