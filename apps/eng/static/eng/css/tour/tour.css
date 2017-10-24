@@ -14,18 +14,20 @@
 }
 
 .tour_head{
-  position: relative;
+  /*position: relative;*/
   width: 100%;
 }
 
-h1{
+#image_text{
+  text-align: center;
   position: relative;
-  top: -150px;
+  /*top: -100px;*/
   width: 100%;
   /*color:white;*/
   padding: 20px;
   z-index: 1;
 }
+
 .col-md-5{
   text-align: center;
 }

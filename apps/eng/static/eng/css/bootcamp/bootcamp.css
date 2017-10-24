@@ -13,26 +13,20 @@
   margin: auto;
 }
 
-/*#monster{
-  height:500px;
-  background-color: lightpink;
+#monster{
+  height:400px;
+  /*background-color: lightpink;*/
   background-image: url(../../images/bootcamp/banner_1.jpg);
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}*/
+}
 
 .links{
-  list-style-type: none; 
+  list-style-type: none;
 }
 
-.bootcamp_image{
-  /*display: block;*/
-  width: 400px;
-  height: 300px;
-  border: 5px solid red
-}
 
 .hideme
 {
@@ -45,13 +39,21 @@
 }
 
 /* Thanks to dmac37 for this hex technique */
+
+.bootcamp_image{
+  width: 100%;
+  border-radius: 10px;
+}
+
 /* Variables */
+
 
 .expanding-grid {
   position: relative;
   width: 90%;
   margin: auto;
 }
+
 .expanding-grid .links {
   display: block;
   margin: 0 -1em;
@@ -59,29 +61,35 @@
   padding: 1em 0;
 }
 .expanding-grid .links > li {
+  /*border: 1px solid lime;*/
+  text-align: center;
+  /*background-color: grey;*/
   box-sizing: border-box;
   float: left;
   padding: 1em;
+  margin-top: 1em;
+  /*margin: 1em;*/
 }
 .expanding-grid .links > li a {
-  background: orange;
+  /*background: orange;*/
   color: #fff;
   display: block;
   font-size: 2em;
   line-height: 1;
-  padding: 25% 1em;
+  /*padding: 25% 1em;*/
   position: relative;
   text-align: center;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.expanding-grid .links > li a:hover {
+/*.expanding-grid .links > li a:hover {
   background: #ffb733;
-}
+}*/
 .expanding-grid .links > li a.active {
-  background: #cc8400;
+  /*background: #cc8400;*/
 }
+
 .expanding-grid .links > li a.active:after {
   background-color: transparent;
   border-bottom: 0.375em solid #888;
@@ -135,7 +143,7 @@
   display: block;
 }
 .expanding-grid .hentry {
-  background: #888;
+  background: lightblue;
   box-sizing: border-box;
   clear: both;
   color: #fff;
@@ -183,7 +191,7 @@
 }
 
 .img-placeholder {
-  background: orange;
+  /*background: orange;*/
   color: #fff;
   font-size: 4em;
   font-weight: 300;

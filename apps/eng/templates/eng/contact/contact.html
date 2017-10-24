@@ -3,24 +3,131 @@
   <head>
     <meta charset="utf-8">
     <title>Pike | Contact Us</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'eng/css/contact/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'eng/javascript/master/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'eng/javascript/contact/contact.js' %}"></script>
+    <style>
+      #map {
+        width: 80%;
+        height: 500px;
+        margin:auto;
+        background-color: grey;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="/service">Service</a>
-          <a class="nav-item nav-link" href="/tour">Tour</a>
-          <a class="nav-item nav-link" href="/bootcamp">Bootcamp</a>
-          <a class="nav-item nav-link" href="/aboutus">About Us</a>
-          <a class="nav-item nav-link active" href="/contact">Contact Us</a>
+    <header>
+      <div id="top_banner" class="row">
+        <div class="col-md-6">
+          <img id="logo_image" src="./../static/eng/images/logo.png" alt="logo" class="img-thumbnail" width="160" height="250">
+          <h3 id="logo_text">Mr Pike <br>International <br>Education</h3>
+        </div>
+
+        <div id="banner_info" class="col-md-6">
+          <div id="banner_right">
+            <div id="banner_contact" style="display:inline-block">
+              <h5><i class="fa fa-envelope" style="font-size:36px"></i>&nbsp;Email: <span class="number_email">pike@mrpikeedu.com</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;US: <span class="number_email">1-626-632-6056</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;China: <span class="number_email">95040498706</span></h5>
+              <div id="social_icon">
+                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-facebook-official" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-twitter-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-google-plus" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-youtube-play" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-instagram" style="font-size:36px;color:#1107cc"></i></a>
+              </div>
+            </div>
+
+            <div id="banner_language">
+              <i class="fa fa-language" style="font-size:50px;font-weight:bolder" aria-hidden="true"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="language_link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose Language
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/cn">Chinese</a>
+                <a class="dropdown-item" href="">English</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <h1>Contact us Yo!</h1>
-    <iframe src="./../static/eng/images/1.mp4" width="100%" height="500px"></iframe>
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/service">Service</a>
+                <a class="nav-item nav-link" href="/tour">Tour</a>
+                <a class="nav-item nav-link" href="/bootcamp">Bootcamp</a>
+                <a class="nav-item nav-link" href="/aboutus">About Us</a>
+                <a class="nav-item nav-link active" href="#">Contact Us</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <form class="" action="mailto:someone@example.com" method="post" enctype="text/plain">
+          <h3>Your Name:
+            <input type="text" name="name" required>
+          </h3>
+          <h4>Your Email:
+            <input type="text" name="mail" required>
+          </h4>
+          <h5>Comment:
+            <textarea name="comment" rows="8" cols="80" required></textarea>
+          </h5>
+          <button>Send</button>
+        </form>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <hr>
+      <hr>
+      <div id="map"></div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </main>
+    <footer>
+      <h2>This is footer</h2>
+      <h2>This is footer</h2>
+      <h2>This is footer</h2>
+    </footer>
+    <script>
+      function initMap() {
+        var uluru = {lat: 34.093702, lng: -118.130354};
+        // var uluru = {address: 307 W Main st., Alhambra, CA 91801};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTSOR3eaSRKA20LPL_b-9VNeFBpdkWwzQ&callback=initMap">
+    </script>
   </body>
 </html>
