@@ -6,10 +6,12 @@
     {% load staticfiles %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'eng/javascript/master/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'eng/javascript/bootcamp/bootcamp.js' %}"></script>
-    <script type="text/javascript" src="{% static 'eng/javascript/bootcamp/bootcamp2.js' %}"></script>
+    <!-- <script type="text/javascript" src="{% static 'eng/javascript/bootcamp/bootcamp.js' %}"></script> -->
+    <!-- <script type="text/javascript" src="{% static 'eng/javascript/bootcamp/bootcamp2.js' %}"></script> -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
@@ -17,107 +19,62 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/service">Service</a>
-            <a class="nav-item nav-link" href="/tour">Tour</a>
-            <a class="nav-item nav-link active" href="/bootcamp">Bootcamp</a>
-            <a class="nav-item nav-link" href="/aboutus">About Us</a>
-            <a class="nav-item nav-link" href="/contact">Contact Us</a>
-          </div>
+      <div id="top_banner" class="row">
+        <div class="col-md-6">
+          <img id="logo_image" src="./../static/eng/images/logo.png" alt="logo" class="img-thumbnail" width="160" height="250">
+          <h3 id="logo_text">Mr Pike <br>International <br>Education</h3>
         </div>
-      </nav>
-    </header>
-    <main>
-      <br>
-      <div class="">
-        <section class="js__target">
-          <a href="#" class="js__close"></a>
-          <div class="content">
-            <div id="testing">
-              <h1>Hi</h1>
-              <p>This is P</p>
+
+        <div id="banner_info" class="col-md-6">
+          <div id="banner_right">
+            <div id="banner_contact" style="display:inline-block">
+              <h5><i class="fa fa-envelope" style="font-size:36px"></i>&nbsp;Email: <span class="number_email">pike@mrpikeedu.com</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;US: <span class="number_email">1-626-632-6056</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;China: <span class="number_email">95040498706</span></h5>
+              <div id="social_icon">
+                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-facebook-official" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-twitter-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-google-plus" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-youtube-play" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-instagram" style="font-size:36px;color:#1107cc"></i></a>
+              </div>
+            </div>
+
+            <div id="banner_language">
+              <i class="fa fa-language" style="font-size:50px;font-weight:bolder" aria-hidden="true"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="language_link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose Language
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/cn">Chinese</a>
+                <a class="dropdown-item" href="">English</a>
+              </div>
             </div>
           </div>
-        </section>
-        <section class="preview">
-          <h1>Mr.Pike Bootcamp Program</h1>
-          <!-- change the href to HTML files with the content to be loaded contained in #content - they'll be loaded via AJAX when clicked. Fully marked-up HTML pages will mean it degrades nicely -->
-          <a class="page" href="#testing"><img src="./../static/eng/images/bootcamp/art.jpg" alt="Art Bootcamp"></a>
-          <!-- <div class="page">
-            <a href="#testing"><img src="./../static/eng/images/bootcamp/art.jpg" alt="Art Bootcamp">Art Bootcamp</a>
-          </div> -->
-          <!-- <a href="#testing" class="page">
-            <span>Page 1</span>
-          </a> -->
-          <a href="#" class="page">
-            <span>Page 2</span>
-          </a>
-          <a href="#" class="page">
-            <span>Page 3</span>
-          </a>
-          <a href="#" class="page">
-            <span>Page 4</span>
-          </a>
-          <a href="#" class="page">
-            <span>Page 5</span>
-          </a>
-          <a href="#" class="page">
-            <span>Page 6</span>
-          </a>
-        </section>
+        </div>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/service">Service</a>
+                <a class="nav-item nav-link" href="/tour">Tour</a>
+                <a class="nav-item nav-link active" href="/bootcamp">Bootcamp</a>
+                <a class="nav-item nav-link" href="/aboutus">About Us</a>
+                <a class="nav-item nav-link" href="/contact">Contact Us</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
       <br>
       <br>
       <div id="container">
@@ -130,37 +87,142 @@
             <h3>Blah 1</h3>
           </div>
         </div>
-        <div  class="hideme row">
-          <div class="col-md-6">
-            <img class="bootcamp_image" src="./../static/eng/images/bootcamp/2.jpg" alt="bootcamp2">
-          </div>
-          <div class="col-md-6">
-            <h3>Blah 2</h3>
-          </div>
-        </div>
-        <div class="hideme row">
-          <div class="col-md-6">
-            <img class="bootcamp_image" src="./../static/eng/images/bootcamp/1.jpg" alt="bootcamp3">
-          </div>
-          <div class="col-md-6">
-            <h3>Blah 3</h3>
+        <br>
+        <br>
+        <div  class="hideme">
+          <div class="container">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
         </div>
       </div>
+      <br>
+      <br>
+      <div class="expanding-grid">
+        <ul class="links">
+          <li><a href="#section1">1</a></li>
+          <li><a href="#section2">2</a></li>
+          <li><a href="#section3">3</a></li>
+          <li><a href="#section4">4</a></li>
+          <li><a href="#section5">5</a></li>
+          <li><a href="#section6">6</a></li>
+          <li><a href="#section7">7</a></li>
+          <li><a href="#section8">8</a></li>
+          <li><a href="#section9">9</a></li>
+          <li><a href="#section10">10</a></li>
+          <li><a href="#section11">11</a></li>
+          <li><a href="#section12">12</a></li>
+        </ul>
 
+        <div id="section1" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title 1</h1>
+            <div class="entry-image"><div class="img-placeholder">1</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+            <img src="./../static/eng/images/bootcamp/ESL.jpg" alt="test" width="100px" height="100px">
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+            <img src="./../static/eng/images/bootcamp/makeup.jpg" alt="test" width="100px" height="100px">
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+            <img src="./../static/eng/images/bootcamp/makeup.jpg" alt="test" width="100px" height="100px">
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+            <img src="./../static/eng/images/bootcamp/makeup.jpg" alt="test" width="300px" height="200px">
+          </article>
+        </div>
 
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
-      <hr>
+        <div id="section2" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">2</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veniam aliquam eos eius blanditiis, facilis minus quod nostrum. Dolores recusandae doloremque quam consequatur consequuntur accusantium quos possimus inventore ratione reiciendis!</p>
+          </article>
+        </div>
 
+        <div id="section3" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">3</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+          </article>
+        </div>
+
+        <div id="section4" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">4</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veniam aliquam eos eius blanditiis, facilis minus quod nostrum. Dolores recusandae doloremque quam consequatur consequuntur accusantium quos possimus inventore ratione reiciendis!</p>
+          </article>
+        </div>
+
+        <div id="section5" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">5</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+          </article>
+        </div>
+
+        <div id="section6" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">6</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veniam aliquam eos eius blanditiis, facilis minus quod nostrum. Dolores recusandae doloremque quam consequatur consequuntur accusantium quos possimus inventore ratione reiciendis!</p>
+          </article>
+        </div>
+
+        <div id="section7" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">7</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+          </article>
+        </div>
+
+        <div id="section8" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">8</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veniam aliquam eos eius blanditiis, facilis minus quod nostrum. Dolores recusandae doloremque quam consequatur consequuntur accusantium quos possimus inventore ratione reiciendis!</p>
+          </article>
+        </div>
+
+        <div id="section9" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">9</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+          </article>
+        </div>
+
+        <div id="section10" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">10</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veniam aliquam eos eius blanditiis, facilis minus quod nostrum. Dolores recusandae doloremque quam consequatur consequuntur accusantium quos possimus inventore ratione reiciendis!</p>
+          </article>
+        </div>
+
+        <div id="section11" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">11</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequatur, culpa voluptate distinctio iure! Error saepe cumque molestiae deserunt nemo autem non amet, aliquam vitae nulla sit praesentium unde iusto.</p>
+          </article>
+        </div>
+
+        <div id="section12" class="expanding-container">
+          <article class="hentry">
+            <h1 class="entry-title">Title</h1>
+            <div class="entry-image"><div class="img-placeholder">12</div></div>
+            <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veniam aliquam eos eius blanditiis, facilis minus quod nostrum. Dolores recusandae doloremque quam consequatur consequuntur accusantium quos possimus inventore ratione reiciendis!</p>
+          </article>
+        </div>
+      </div>
     </main>
     <footer>
 
     </footer>
+    <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
     <script type="text/javascript" src="{% static 'eng/javascript/bootcamp/bootcamp.js' %}"></script>
     <!-- <script type="text/javascript" src="{% static 'eng/javascript/bootcamp/bootcamp2.js' %}"></script> -->
 

@@ -1,5 +1,5 @@
 *{
-  border: 1px solid lime
+  border: 1px solid pink;
 }
 
 .navbar-nav{
@@ -23,6 +23,10 @@
   background-position: center center;
 }*/
 
+.links{
+  list-style-type: none; 
+}
+
 .bootcamp_image{
   /*display: block;*/
   width: 400px;
@@ -42,101 +46,149 @@
 
 /* Thanks to dmac37 for this hex technique */
 /* Variables */
-* {
-	/*box-sizing: border-box;*/
+
+.expanding-grid {
+  position: relative;
+  width: 90%;
+  margin: auto;
 }
-body {
-	/*color: #ABABAB;*/
-	/*background: #EDECEC;*/
-	/*font: 100%/1.5em "Varela Round", sans-serif;*/
-	/*padding: 50px;*/
+.expanding-grid .links {
+  display: block;
+  margin: 0 -1em;
+  overflow: hidden;
+  padding: 1em 0;
 }
-a {
-	text-decoration: none;
-	transition:all 200ms ease-in-out;
+.expanding-grid .links > li {
+  box-sizing: border-box;
+  float: left;
+  padding: 1em;
 }
-.preview {
-   max-width:80%;
-   margin: 1% auto;
+.expanding-grid .links > li a {
+  background: orange;
+  color: #fff;
+  display: block;
+  font-size: 2em;
+  line-height: 1;
+  padding: 25% 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.page {
-	background: #FFF;
-	position: relative;
-	width: 33%;
-	float: left;
-	margin: 0 1px 1px 0;
-	text-align: center;
-	cursor: pointer;
-	color: #ABABAB;
+.expanding-grid .links > li a:hover {
+  background: #ffb733;
 }
-.page:before {
-	content: "";
-	display: block;
-	padding-top: 100%;
+.expanding-grid .links > li a.active {
+  background: #cc8400;
 }
-.page:hover {
-	background: #777;
-	color: #FFF;
+.expanding-grid .links > li a.active:after {
+  background-color: transparent;
+  border-bottom: 0.375em solid #888;
+  border-left: 0.375em solid transparent;
+  border-right: 0.375em solid transparent;
+  bottom: -0.5em;
+  content: '';
+  height: 0;
+  left: 50%;
+  margin-left: -0.375em;
+  position: absolute;
+  width: 0;
 }
-.page:last {
-	margin-right: 0;
+@media only screen and (max-width: 39.99em) {
+  .expanding-grid .links > li {
+    width: 50%;
+  }
+  .expanding-grid .links > li:nth-of-type(2n+1) {
+    clear: left;
+  }
 }
-span {
-	position:  absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	padding: 44px;
+@media only screen and (min-width: 40em) and (max-width: 59.99em) {
+  .expanding-grid .links > li {
+    width: 33.33333%;
+  }
+  .expanding-grid .links > li:nth-of-type(3n+1) {
+    clear: left;
+  }
 }
-.js__target {
-	position: absolute;
-	background: #6CADDF;
-	color: #FFF;
-	padding: 44px;
-	opacity: 0;
-	width: 0;
-	height: 0;
-	display: block;
-	overflow: hidden;
+@media only screen and (min-width: 60em) {
+  .expanding-grid .links > li {
+    width: 25%;
+  }
+  .expanding-grid .links > li:nth-of-type(4n+1) {
+    clear: left;
+  }
 }
-.js__target .content {
-	opacity: 0;
-	transition:all 200ms ease-in-out;
+.expanding-grid .spacer {
+  background-color: #888;
+  clear: both;
+  display: block;
+  margin: 0 1em;
 }
-.js__target.move {
-	transition:all 400ms ease-in-out; /* this should not be greater than the setTimeout milliseconds parameter */
+.expanding-grid .expanding-container {
+  clear: both;
+  display: none;
+  overflow: hidden;
+  width: 100%;
 }
-.js__target.open {
-	opacity: 1; /* adjust this if you want your modal slightly opaque */
-	z-index: 99999;
+.expanding-grid .expanding-container.expanded, .expanding-grid .expanding-container:target {
+  display: block;
 }
-.js__target.expand {
-	/*top: 0 !important;*/
-	/*bottom: 0 !important;*/
-	left: 0 !important;
-	right: 0 !important;
-	width: 100% !important;
-	height: 100% !important;
+.expanding-grid .hentry {
+  background: #888;
+  box-sizing: border-box;
+  clear: both;
+  color: #fff;
+  min-height: 4em;
+  overflow: hidden;
+  padding: 2em;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.js__target.expand .content, .js__target.expand .js__close {
-	opacity: 1;
+.expanding-grid .hentry .entry-image {
+  box-sizing: border-box;
+  float: right;
+  margin-left: 1em;
+  padding: 0.25em 0 0.52em 1em;
+  text-align: center;
+  width: 50%;
 }
-.js__close {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	opacity: 0; /* stops the element being shown immediately */
-	transition:all 200ms ease-in;
+.expanding-grid .hentry .entry-title {
+  font-size: 1.5em;
 }
-.js__target .js__close:after {
-	position: relative;
-	content: "x";
-	color: #ABABAB;
-	width: 25px;
-	height: 25px;
-	display: block;
-	border: 1px solid #CCC;
-	text-align: center;
-  background: #EEE
+.expanding-grid .close-button {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNLjcuN2wxOCAxOG0tMTggMGwxOC0xOCIvPjwvc3ZnPg==) no-repeat scroll 50% 50% transparent;
+  color: #fff;
+  display: inline-block;
+  height: 20px;
+  line-height: 1;
+  overflow: hidden;
+  padding: 1.5em 2em;
+  text-decoration: none;
+  text-indent: 5em;
+  white-space: nowrap;
+  width: 20px;
+  will-change: opacity;
+  z-index: 5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.expanding-grid .close-button.active {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.expanding-grid .close-button:hover {
+  opacity: 0.5;
+}
+
+.img-placeholder {
+  background: orange;
+  color: #fff;
+  font-size: 4em;
+  font-weight: 300;
+  line-height: 1;
+  padding: 25% 0.25em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
