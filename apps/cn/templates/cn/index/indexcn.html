@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'eng/css/index/index.css' %}">
     <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'eng/javascript/master/bootstrap.min.js' %}"></script>
@@ -29,7 +30,7 @@
               <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;美国电话: <span class="number_email">1-626-632-6056</span></h5>
               <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;中国电话: <span class="number_email">95040498706</span></h5>
               <div id="social_icon">
-                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-facebook-official" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-exclamation-circle" style="font-size:24px"></i></a>
                 <a class="social_icon" href="#"><i class="fa fa-twitter-square" style="font-size:36px;color:#1107cc"></i></a>
                 <a class="social_icon" href="#"><i class="fa fa-google-plus" style="font-size:36px;color:#1107cc"></i></a>
                 <a class="social_icon" href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:#1107cc"></i></a>
@@ -60,10 +61,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="/us">派克主页 <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/us">派克主页 <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="/service">派克服务</a>
                 <a class="nav-item nav-link" href="/tour">派克游学</a>
                 <a class="nav-item nav-link" href="/bootcamp">派克培训</a>
+                <a id="sos" class="nav-item nav-link" href="/service/i20">紧急应对<i class="material-icons" style="font-size:24px">add_alert</i></a>
                 <a class="nav-item nav-link" href="/aboutus">关于派克</a>
                 <a class="nav-item nav-link" href="/contact">联系派克</a>
               </div>
@@ -130,26 +132,26 @@
               <img class="index_slide" src="./../static/eng/images/index/index_slide_3.jpg" alt="Service-1">
               <h2>派克服务</h2>
               <p>因被才所战克边即好，海选信引接群听，正别2具元正老。 因结法象识正身界，动先思什七放内，书总李位属低。 周命性许风增计路然，意步起极育各些教空，种她2一也对克用。 府必便主来高一断从，林术对每层基间说，细系更他制再告。</p>
-              <button class="index_button"><a href="/service">Learn More</a></button>
+              <a class="btn btn-dark" href="/service">更多信息</a>
             </div>
             <div class="col-md-4 slidebox post-no">
               <img class="index_slide" src="./../static/eng/images/index/index_slide_2.jpg" alt="Service-2">
               <h2>派克游学</h2>
               <p>因被才所战克边即好，海选信引接群听，正别2具元正老。 因结法象识正身界，动先思什七放内，书总李位属低。 周命性许风增计路然，意步起极育各些教空，种她2一也对克用。 府必便主来高一断从，林术对每层基间说，细系更他制再告。</p>
-              <button class="index_button"><a href="/tour">Learn More</a></button>
+              <a class="btn btn-dark" href="/tour">更多信息</a>
             </div>
             <div class="col-md-4 slidebox post-right">
               <img class="index_slide" src="./../static/eng/images/index/index_slide_1.jpg" alt="Service-2">
               <h2>派克培训</h2>
-              <p>风确斗部听回他观把，九志员精造月与，立至F效史好效。 了元部八很发看下果，数已持具进论立，所名医护磨箩状。 引件五如究日型些认克记，传政上织基没主飞人不，即按E般体坝7资越。</p>
-              <button class="index_button"><a href="/bootcamp">Learn More</a></button>
+              <p>风确斗部听回他观把，九志员精造月与，立至F效史好效。了元部八很发看下果，数已持具进论立 了元部八很发看下果，数已持具进论立，所名医护磨箩状。 引件五如究日型些认克记，传政上织基没主飞人不，即按E般体坝7资越。</p>
+              <a class="btn btn-dark" href="/bootcamp">更多信息</a>
             </div>
           </div>
         </div>
         <div class="col-md-1">
         </div>
       </div>
-      <br><br><br>
+      <br>
       <div class="why_us">
         <h1>为什么选择派克</h1>
         <hr>
@@ -196,11 +198,8 @@
       <br>
       <br>
     </main>
-    <footer>
-      <h3>This is footer</h3>
-      <h3>This is footer</h3>
-      <h3>This is footer</h3>
-      <h3>This is footer</h3>
+    <footer style="height:300px;background-color:grey">
+
     </footer>
 
 

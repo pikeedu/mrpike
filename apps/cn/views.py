@@ -10,6 +10,9 @@ def aboutus(request):
 def service(request):
     return render(request, 'cn/service/servicecn.html')
 
+def servicei20(request):
+    return render(request, 'cn/service/i20.html')
+
 def tour(request):
     return render(request, 'cn/tour/tourcn.html')
 
@@ -21,3 +24,6 @@ def contact(request):
 
 def error(request):
     return render(request, 'cn/error/errorcn.html')
+
+def esltour(request):
+    return render(request, 'cn/tour/eslla.html')

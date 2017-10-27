@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{% static 'eng/css/service/service.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -58,6 +59,7 @@
                 <a class="nav-item nav-link active" href="/service">派克服务 <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="/tour">派克游学</a>
                 <a class="nav-item nav-link" href="/bootcamp">派克培训</a>
+                <a id="sos" class="nav-item nav-link" href="/service/i20">紧急应对<i class="material-icons" style="font-size:24px">add_alert</i></a>
                 <a class="nav-item nav-link" href="/aboutus">关于派克</a>
                 <a class="nav-item nav-link" href="/contact">联系派克</a>
               </div>
@@ -80,7 +82,7 @@
               <a class="nav-link ml-3 my-1" href="#university">美国大学</a>
               <a class="nav-link ml-3 my-1" href="#higher_degree">高学位</a>
             </nav>
-            <a class="nav-link" href="#local_student">本地学生服务</a>
+            <a class="nav-link" href="#local_student">国际留学生服务</a>
             <nav class="nav nav-pills flex-column">
               <a class="nav-link ml-3 my-1" href="#visa">签证</a>
               <a class="nav-link ml-3 my-1" href="#i-20">I-20</a>
@@ -173,6 +175,9 @@
               <div class="col-md-4 service_detail">
                 <h3>I-20</h3>
                 <p> 因被才所战克边即好，海选信引接群听，正别2具元正老。 因结法象识正身界，动先思什七放内，书总李位属低。 周命性许风增计路然，意步起极育各些教空，种她2一也对克用。 府必便主来高一断从，林术对每层基间说，细系更他制再告。</p>
+                <a class="btn btn-secondary" href="/service/i20">了解更多</a>
+                <a class="btn btn-dark" href="/service/i20">了解更多</a>
+                <a class="btn btn-info" href="/service/i20">了解更多</a>
               </div>
               <div class="col-md-4">
                 <img class="service_image" src="./../../static/eng/images/service/i-20.jpg" alt="application">
@@ -229,7 +234,7 @@
       </main>
     </section>
 
-    <footer>
+    <footer style="height:300px;background-color:grey">
 
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
