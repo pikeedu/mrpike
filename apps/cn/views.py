@@ -27,3 +27,6 @@ def error(request):
 
 def esltour(request):
     return render(request, 'cn/tour/eslla.html')
+
+def us(request):
+    return render(request, 'eng/index/index.html')

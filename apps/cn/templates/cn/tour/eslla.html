@@ -5,15 +5,15 @@
     <title>派克 | 游学</title>
 
     {% load staticfiles %}
-    <link rel="stylesheet" href="{% static 'eng/css/tour/tour.css' %}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="{% static 'cn/css/tour/eslla.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{% static 'eng/javascript/master/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'eng/javascript/tour/tour.js' %}"></script>
+    <!-- <script type="text/javascript" src="{% static 'eng/javascript/master/bootstrap.min.js' %}"></script> -->
+    <!-- <script type="text/javascript" src="{% static 'eng/javascript/tour/eslla.js' %}"></script> -->
   </head>
 
   <body>
@@ -67,6 +67,7 @@
                   <a class="nav-item nav-link" href="/service">派克服务</a>
                   <a class="nav-item nav-link" href="/tour">派克游学</a>
                   <a class="nav-item nav-link" href="/bootcamp">派克培训</a>
+                  <a id="sos" class="nav-item nav-link" href="/service/i20">紧急应对<i class="material-icons" style="font-size:24px">add_alert</i></a>
                   <a class="nav-item nav-link" href="/aboutus">关于派克</a>
                   <a class="nav-item nav-link" href="/contact">联系派克</a>
                 </div>
@@ -77,12 +78,178 @@
     </header>
 
     <main>
-      <h1>可以做file upload，链接直接去读PDF文件！</h1>
+      <h1>英语强化班-全日制英文强化体验营 </h1>
+      <div class="timeline animated">
+
+        	<div class="timeline-row">
+        		<div class="timeline-time">项目介绍</div>
+        		<div class="timeline-icon">
+        			<div class="bg-primary"><i class="fa fa-pencil"></i></div>
+        		</div>
+        		<div class="panel timeline-content">
+        			<div class="panel-body">
+        				<p>英语强化课程是为了满足学生因日常或学术需求，希望提高英语水平的课程。通过学习学生的日常和学术英语水平都能有显著提高。学习ESL语言课程，ESL是全美语言学校最通用的世界级权威英语培训课程。</p>
+                <p>ESL课程教材专门为母语非英语的学生而设，具有很强的实用性。“让英语成为你的第二语言”，是ESL课程终极的教学目标！ESL课程是专门针对国际学生和移民学生而开设的，在课堂上学生不仅能提高英语，还能了解到许多美国文化。</p>
+                <p>ESL课程非常注重实用性，取材也常常与社会生活密切相关，所以ESL课程能够让学生了解更多的美国文化。ESL课程会鼓励学生更多地参与到课堂学习中来，采用角色扮演、小组讨论、自由提问、演讲等多种形式，因此学生需要更为积极主动，
+                  克服胆怯心理，多发言，敢于在他人面前表现自己，多多与老师和同学进行互动沟通。而这正是典型的美式教育特点，因此ESL课程能够有效帮助学生适应新的教学方式，深入了解美国素质教育精髓。</p>
+        			</div>
+        		</div>
+        	</div>
+          <br>
+          <br>
+        	<div class="timeline-row">
+        		<div class="timeline-time">英语强化课程的优势</div>
+        		<div class="timeline-icon">
+        			<div class="bg-warning"><i class="fa fa-quote-right"></i></div>
+        		</div>
+        		<div class="panel timeline-content">
+        			<div class="panel-body">
+                <div class="row">
+                  <div class="col-md-9">
+                    <ol>
+                      <li>不同程度的班级适合程度各异的学生。</li>
+                      <li>老师们资质和经验兼具，采用最流行的教学方法</li>
+                      <li>使用最新的教学器材和主流出版商出版的教材。</li>
+                      <li>全方位提高语言能力。</li>
+                      <li>学术和日常英语兼顾。</li>
+                      <li>小班授课，重视学生具体需求。</li>
+                    </ol>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="./../static/eng/images/tour/header_7.jpg" alt="">
+                  </div>
+                </div>
+        			</div>
+        		</div>
+        	</div>
+          <br>
+          <br>
+        	<div class="timeline-row">
+        		<div class="timeline-time">全日制日常安排</div>
+        		<div class="timeline-icon">
+        			<div class="bg-info"><i class="fa fa-camera"></i></div>
+        		</div>
+        		<div class="panel timeline-content">
+        			<div class="panel-body">
+                <table class="table table-striped table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Monday</th>
+                      <th scope="col">Tuesday</th>
+                      <th scope="col">Wednesday</th>
+                      <th scope="col">Thursday</th>
+                      <th scope="col">Friday</th>
+                      <th scope="col">Sat&Sun</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">07:00-07:45</th>
+                      <td>起床／早餐</td>
+                      <td>起床／早餐</td>
+                      <td>起床／早餐</td>
+                      <td>起床／早餐</td>
+                      <td>起床／早餐</td>
+                      <td>起床／早餐</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+        			</div>
+        		</div>
+        	</div>
+
+        	<div class="timeline-row">
+        		<div class="timeline-time"><small>Oct 12</small>1:14 PM</div>
+        		<div class="timeline-icon">
+        			<div class="bg-primary"><i class="fa fa-video-camera"></i></div>
+        		</div>
+        		<div class="panel timeline-content">
+        			<div class="panel-body">
+        				<h2>This is a title for this timeline post</h2>
+        				<div class="video-container"><iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" src="https://player.vimeo.com/video/16202331?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe></div>
+        				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+        			</div>
+        		</div>
+        	</div>
+
+        	<div class="timeline-row">
+        		<div class="timeline-time"><small>Oct 10</small>4:53 PM</div>
+        		<div class="timeline-icon">
+        			<div class="bg-primary"><i class="fa fa-pencil"></i></div>
+        		</div>
+        		<div class="panel timeline-content">
+        			<div class="panel-body">
+        				<h2>This is a title for this timeline post</h2>
+        				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+        			</div>
+        		</div>
+        	</div>
+
+        	<div class="timeline-row">
+        		<div class="timeline-time"><small>Oct 9</small>6:14 PM</div>
+        		<div class="timeline-icon">
+        			<div class="bg-warning"><i class="fa fa-quote-right"></i></div>
+        		</div>
+        		<div class="panel timeline-content">
+        			<div class="panel-body">
+        				<blockquote>
+        					<p>Lorem ipsum velit ullamco anim pariatur proident eu deserunt laborum. Lorem ipsum ad in nostrud adipisicing cupidatat anim officia ad id cupidatat veniam quis elit ullamco</p>
+        					<small>John Smith</small>
+        				</blockquote>
+        			</div>
+        		</div>
+        	</div>
+
+        	<div class="timeline-row">
+        		<div class="timeline-time"><small>Oct 6</small>9:00 AM</div>
+        		<div class="timeline-icon">
+        			<div class="bg-info"><i class="fa fa-camera"></i></div>
+        		</div>
+        		<div class="panel timeline-content">
+        			<div class="panel-body">
+        				<h2>This is an image posted on my timeline</h2>
+        				<img class="img-responsive" src="http://www.17sucai.com/upload/224021/2014-11-17/e73c91e226b6a88b5e5c97aa336996ca_big.jpg" />
+        				<p>Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+        			</div>
+        		</div>
+        	</div>
+
+        	<div class="timeline-row">
+        		<div class="timeline-time"><small>Oct 2</small>1:14 PM</div>
+        		<div class="timeline-icon">
+        			<div class="bg-primary"><i class="fa fa-video-camera"></i></div>
+        		</div>
+        		<div class="panel timeline-content">
+        			<div class="panel-body">
+        				<h2>This is a title for this timeline post</h2>
+        				<div class="video-container"><iframe src="http://www.56.com/iframe/MTE0MTEwNjc2" width="320" height="270" frameborder="0" allowfullscreen=""></iframe></div>
+        				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+        			</div>
+        		</div>
+        	</div>
+
+        </div>
 
     </main>
 
     <footer>
 
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'cn/javascript/master/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'cn/javascript/tour/eslla.js' %}"></script>
   </body>
 </html>

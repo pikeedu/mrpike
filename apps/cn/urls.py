@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^tour/eslla$', views.esltour),
     url(r'^bootcamp$', views.bootcamp),
     url(r'^contact$', views.contact),
+    url(r'^us$', views.us),
     url(r'^[a-zA-Z0-9_.-]*$',views.error),
 
 ]
