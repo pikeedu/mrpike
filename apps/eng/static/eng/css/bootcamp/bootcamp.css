@@ -146,7 +146,7 @@
   background: lightblue;
   box-sizing: border-box;
   clear: both;
-  color: #fff;
+  /*color: #fff;*/
   min-height: 4em;
   overflow: hidden;
   padding: 2em;
