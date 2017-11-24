@@ -19,11 +19,11 @@ def tour(request):
 def bootcamp(request):
     return render(request, 'cn/bootcamp/bootcampcn.html')
 
-def bootcamp_art(request):
-    return render(request, 'cn/bootcamp/art.html')
+def bootcamp_film1(request):
+    return render(request, 'cn/bootcamp/film1.html')
 
-def bootcamp_game(request):
-    return render(request, 'cn/bootcamp/game.html')
+def bootcamp_film2(request):
+    return render(request, 'cn/bootcamp/film2.html')
 
 def bootcamp_film(request):
     return render (request, 'cn/bootcamp/film.html')
@@ -31,8 +31,8 @@ def bootcamp_film(request):
 def bootcamp_makeup(request):
     return render (request, 'cn/bootcamp/makeup.html')
 
-def bootcamp_animation(request):
-    return render (request, 'cn/bootcamp/animation.html')
+def bootcamp_cinemamakeup(request):
+    return render (request, 'cn/bootcamp/cinemamakeup.html')
 
 def bootcamp_usc(request):
     return render (request, 'cn/bootcamp/usc.html')

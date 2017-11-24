@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>派克 | 培训</title>
+    {% load staticfiles %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'eng/javascript/master/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'cn/css/bootcamp/cinemamakeup.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div id="top_banner" class="row">
+        <div class="col-md-6">
+          <img id="logo_image" src="./../static/eng/images/logo.png" alt="logo" class="img-thumbnail" width="160" height="250">
+          <h3 id="logo_text">派克 <br> 教育</h3>
+        </div>
+
+        <div id="banner_info" class="col-md-6">
+          <div id="banner_right">
+            <div id="banner_contact" style="display:inline-block">
+              <h5><i class="fa fa-envelope" style="font-size:36px"></i>&nbsp;邮箱: <span class="number_email">pike@mrpikeedu.com</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;美国电话: <span class="number_email">1-626-632-6056</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;中国电话: <span class="number_email">95040498706</span></h5>
+              <div id="social_icon">
+                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-facebook-official" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-twitter-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-google-plus" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-youtube-play" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-instagram" style="font-size:36px;color:#1107cc"></i></a>
+              </div>
+            </div>
+
+            <div id="banner_language">
+              <i class="fa fa-language" style="font-size:50px;font-weight:bolder" aria-hidden="true"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="language_link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                选择语言
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/">中文</a>
+                <a class="dropdown-item" href="/us">英文</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">派克主页</a>
+                <a class="nav-item nav-link" href="/service">派克服务</a>
+                <a class="nav-item nav-link" href="/tour">派克游学</a>
+                <a class="nav-item nav-link active" href="/bootcamp">派克培训<span class="sr-only">(current)</span></a>
+                <a id="sos" class="nav-item nav-link" href="/service/i20">紧急应对<i class="material-icons" style="font-size:24px">add_alert</i></a>
+                <a class="nav-item nav-link" href="/aboutus">关于派克</a>
+                <a class="nav-item nav-link" href="/contact">联系派克</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="banner">
+          <img src="./../../static/cn/images/bootcamp/1.png" alt="banner" width="100%">
+        </div>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-md-6">
+              <p>学校的校史已达18年，是业内公认的全球顶级化妆培训学校之一，学费也相对低廉。</p>
+              <p>提供专业化妆师课程，包括特殊化妆效果和化妆培训。为M-1学生签证发放I-20表格。</p>
+              <p>学校的网站:</p>
+              <p><i>http://www.cinemamakeup.com</i></p>
+              <p>学校地址: </p>
+              <p>3780 Wilshire Blvd., Suite 300, Los Angeles, CA 90010 USA　（加州洛杉矶）</p>
+              <p><b>鉴于培训的艺术视觉性质，对TOEFL 成绩不作要求。</b></p>
+            </div>
+            <div class="col-md-6">
+              <p style="line-height:2">学校的教学主任是电影与科学学院（Academy of Motion Pictures and Sciences）董事会成员之一，也是化妆系的第一位系主任，曾与阿尔弗雷德•希区柯克，
+                米切尔•菲佛和乔治•克鲁尼等着名导演 和演员合作共事。获得与这些专家进行联络的宝贵机会，建立工作网路，瞭解现实世界知识，能为学校带来成为成功化妆师的巨大优势。
+                学校的教师都是现职化妆师，曾参与过当代众多好莱坞大片的拍摄，如：蝙蝠侠前传，夺宝奇兵4，斯巴达三百勇士，James Cameron 导演的天神下凡和X战警外传1金刚狼，J.J.
+                Abrahm导演的星舰迷航，以及各大国际时尚杂志如Vogue，Cosmopolitan等</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer style="background-color:grey; height:250px">
+
+    </footer>
+  </body>
+</html>
