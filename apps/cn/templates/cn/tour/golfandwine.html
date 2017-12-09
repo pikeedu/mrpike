@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>派克 | 游学</title>
+
+    {% load staticfiles %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'cn/css/tour/golfandwine.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'cn/javascript/master/bootstrap.min.js' %}"></script>
+  </head>
+  <body>
+    <header>
+      <div id="top_banner" class="row">
+        <div class="col-md-6">
+          <img id="logo_image" src="./../static/eng/images/logo.png" alt="logo" class="img-thumbnail" width="160" height="250">
+          <h3 id="logo_text">派克 <br>教育</h3>
+        </div>
+
+        <div id="banner_info" class="col-md-6">
+          <div id="banner_right">
+            <div id="banner_contact" style="display:inline-block">
+              <h5><i class="fa fa-envelope" style="font-size:36px"></i>&nbsp;邮箱: <span class="number_email">pike@mrpikeedu.com</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;美国电话: <span class="number_email">1-626-632-6056</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;中国电话: <span class="number_email">95040498706</span></h5>
+              <div id="social_icon">
+                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-facebook-official" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-twitter-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-google-plus" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-youtube-play" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-instagram" style="font-size:36px;color:#1107cc"></i></a>
+              </div>
+            </div>
+
+            <div id="banner_language">
+              <i class="fa fa-language" style="font-size:50px;font-weight:bolder" aria-hidden="true"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="language_link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                选择语言
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/">中文</a>
+                <a class="dropdown-item" href="/us">英文</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">派克主页</a>
+                <a class="nav-item nav-link" href="/service">派克服务</a>
+                <a class="nav-item nav-link" href="/tour">派克游学</a>
+                <a class="nav-item nav-link" href="/bootcamp">派克培训</a>
+                <a id="sos" class="nav-item nav-link" href="/service/i20">紧急应对<i class="material-icons" style="font-size:24px">add_alert</i></a>
+                <a class="nav-item nav-link" href="/aboutus">关于派克</a>
+                <a class="nav-item nav-link" href="/contact">联系派克</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h2 id="the_title">高尔夫运动 酒庄体验营项目介绍</h2>
+
+        <div class="day">
+          <h2 class="title">第1天  中国-洛杉矶</h2>
+          <h4>行程描述</h4>
+          <p>乘机飞往天使之城洛杉矶，入住酒店。</p>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第2天  洛杉矶</h2>
+          <h4>行程描述</h4>
+          <p>上午：团体活动,认识团员。</p>
+          <p>Golf的文化课程，了解高尔夫的文化，历史，比赛竞技的相关知识。</p>
+          <p>下午：参观游览加州大学洛杉矶分校</p>
+          <div class="row">
+            <div class="col-md-5">
+              <img src="" alt="UCLA">
+            </div>
+            <div class="col-md-7">
+              <p>加州大学洛杉矶分校，是一所位于美国加利福尼亚州洛杉矶的公立研究型大学，创办于1919年，是加利福尼亚大学系统中的第二所大学，目前拥有约29,000名本科生与12,000名研究生，提供包括学士、硕士与博士在内337种不同的学位课程。UCLA是美国享
+                誉盛名的高等学府，在各种大学排名中均有骄人成绩。洛杉矶加州大学先后共有14名校友获得诺贝尔奖。</p>
+              <p>加州大学的几所分校素以学术自由和学生自治著称。海阔凭鱼跃，天高任鸟飞。在这里，没有来自保守传统的约束，没有不可逾越的清规戒律，在这片自由的土地上你可以天马行空，放开思维畅想，自由探索未知世界，在这里你的思想永远会得到尊重，
+                即使别人并不同意你的观点。正是这种缘自西部开发的自由思想在加州大学的分校中孕育了无数的新思想和伟大的发现。这里也成为了无数中国孩子向往接受高等教育的地方。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第3天  洛杉矶</h2>
+          <h4>行程描述</h4>
+          <p>上午：Golf的文化课程，了解高尔夫的文化，历史，比赛竞技的相关知识。高尔夫运动起源于英国，最早源自爱尔兰牧羊人的游戏，成立于1787 年的英国爱丁堡高尔夫球社是世界上第一家高尔夫俱乐部。
+            二战以后9美国逐渐取代英国成为高尔夫休闲发展最兴旺的地区。据粗略统计: 每10个美国人中就有1个是高尔夫休闲者。 </p>
+          <p>午：游览Griffith公园和天文台</p>
+          <div class="row">
+            <div class="col-md-5">
+              <img src="" alt="Griffith_Observatory">
+            </div>
+            <div class="col-md-7">
+              <p>天文台坐落于好莱坞的山顶上，视野相当宽阔，夜间时分可以眺望全洛杉矶五光十色的街景及万家灯火的辉煌。天文台科学展示厅内展有许多天文物理的知识及图片，天文台顶上还有一座加州最大的12寸巨型天文望远镜供民众和游客探索群星的奥秘。
+                格利菲斯公园内种植了许多橡树和野生鼠尾草，公园大部分的地方仍维持早期印第安人居住的景观。园内有多项观光景点，包括动物园、高尔夫球场、博物馆、天文瞭望台，登山骑马步道及火车游览等。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第4天  洛杉矶</h2>
+          <h4>行程描述</h4>
+          <p>上午：Golf的文化课程，了解高尔夫的文化，历史，比赛竞技的相关知识。</p>
+          <p>现行的《高尔夫规则》由苏格兰圣安德鲁斯皇家古老高尔夫球俱乐部（R & A）及美国高尔夫球协会（USGA）审定，世界通用的最权威职业和业余选手之行为规范用书，每四年重新修订、印制一次。</p>
+          <p>因为随着这项运动的发展，原有的规则需要经过不断的审核、修改，才能更加符合高尔夫运动的精神。对于每一门运动来说，所相应的规则是必需的，它是一门通用的语言，一部通用的工具；对于高尔夫运动来说，高尔夫规则是维护高尔夫运动秩序、
+            指引业余球员和职业球员赛事的标准。</p>
+          <p>下午： 开车前往圣塔巴巴巴拉</p>
+          <div class="row">
+            <div class="col-8">
+              <img src="" alt="Santa_Barbara_1">
+            </div>
+            <div class="col-md-4">
+              <p>美国加利福尼亚州的圣塔芭芭拉市, 也称圣巴巴拉 (Santa Barbara) ，圣塔巴巴拉市东西连着 4个卫星城，分别是格力塔（Goleta)、蒙提西托(Montecito)、撒麦兰德(Summerland)和卡皮提拉（Carpinteria)。圣塔巴巴拉的年均气温22摄氏度。</p>
+            </div>
+          </div>
+          <p>圣塔芭芭拉使命教堂（Santa Barbara Mission Church</p>
+          <p> <img src="" alt="Santa_Barbara_Mission" align=left> 位于Laguna街2201号的圣塔芭芭拉使命教堂。圣塔芭芭拉使命教堂建于1786年。西班牙的天主教徒视将当地美洲印第安人改造成基督徒作为自己的使命。教堂几经地震，几次修复，
+            最后一次修建为1927年，但教堂的内部构造几乎保留了1820年大修复后的特征。热带植物的花园、莲花盛开的喷泉、涂满精致画作的广场空地以及绿意葱茏的草坪。即便不是教徒，徜徉其间，呼吸着清新的空气，内心也不禁空灵起来了。 </p>
+          <p>县法院（County Courthouse）</p>
+          <p> <img src="" alt="Santa_barbara_Court" align=right> 圣塔芭芭拉另一处“必游之地”，位于Anacapa街1100号的县法院（County Courthouse）。该法院建成于1929年，依然是白墙红瓦的西班牙建筑风格。据说它算得上是全美最“豪华”的政府机关办公地。
+            参观是免费的，登上顶层（大约五层）的观光台，整个圣塔芭芭拉便可尽收眼底。整洁的马路、绿色的植物、几乎所有的建筑都是红白两色，一切都让人感觉如此心平气和。</p>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第5天  圣塔巴巴巴拉</h2>
+          <h4>行程描述</h4>
+          <p>上午：前往 Golf Club- Sandpiper Golf Club</p>
+          <div class="row">
+            <img src="" alt="Golf_Club">
+          </div>
+          <p>该球场拥依山傍海，有两个十八洞，分别为72/71杆标准杆球场，他们分别是艾克（Ike）和宝贝（Babe）球场。IKE 艾克球场艾克高尔夫球场以它的长球道和大波动弯曲的果岭而闻名。码数5，589到7,181，标准杆72，
+            倾斜等级130到143.艾克球场是美国 SCGA业余球手取得公开赛参赛资格的球场。此球场已经获得来自高尔夫球文摘杂志的很多奖项。</p>
+          <p>下午： 游览圣塔芭芭拉</p>
+          <p>游览UCSB校园</p>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="UCSB">
+            </div>
+            <div class="col-md-6">
+              <p>加州大学圣塔芭芭拉分校（University of California, Santa Barbara简称UCSB）属于加利福尼亚大学系统，是美国顶尖的以研究科学为主，且学术声望非常高的研究性公立大学。校园两面环海并拥有紧邻著太平洋的一片美丽迷人的海滩，环海面积达1000英亩。
+                作为公立常春藤盟校之一，UCSB有着傲人的学术成就和优美的校园环境，每年都吸引着无数的世界优秀研究学者在这里进行深造和学术研究，如今UCSB已经是全美乃至全世界重要的学术发展重地之一。</p>
+              <p>加州大学圣塔芭芭拉分校University of California与加州大学伯克利分校、加州大学洛杉矶分校、加州大学圣地亚哥分校、加州大学欧文分校 、加州大学戴维斯分校、加州大学圣克鲁兹分校一样，是世界顶尖的高等学府。
+                此间学校亦被誉为公立常春藤之一，同时也是美国重要的学术联盟美国大学联合会61所知名大学成员之一。</p>
+            </div>
+          </div>
+          <p>圣塔芭芭拉市中心,海滩</p>
+          <p> <img src="" alt="Santa_Barbara_2"> 圣芭芭拉海滩被称为美国的蔚蓝海岸，在市中心和海滩可以看见很多艺术家们，沿着海岸步道展出他们意境独特的艺术创作，另外，史登码头是圣塔芭芭拉海滩的观光重心，
+            码头始建于1872年，云集了众多餐厅、小商店与小酒吧，栈桥中央甚至还有一间水族馆。码头左右即是圣塔芭芭拉的东、西海滩，比较热门的户外活动是风帆和冲浪。 </p>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第6天  圣塔巴巴巴拉</h2>
+          <h4>行程描述</h4>
+          <p>上午：前往 Golf Club- Rancho San Marcos  Golf Club</p>
+          <div class="row">
+            <img src="" alt="Rancho_San_Marcos_Golf_Club">
+          </div>
+          <p>该球场坐落在桑堪潘天然森林心脏地带的山脉之间的山谷，约450英亩土地。这无疑是在清迈的高尔夫球场中自然美景最好的球场之一。该球场由世界著名的高尔夫球场设计师罗恩•M•加尔设计，灵感来自于其地平线上壮丽的山丘。
+            无论您在球场中身在何处，您一定能最享受被大自然环保：附近森林的郁郁葱葱——由丰富的植被组成，如黄金柚木、具翼龙脑香和许多其他种类。</p>
+          <p>下午： 球场练球—自由活动。</p>
+          <p>大部分的学员上练习场，常常漫无目的的埋头苦练，有时用七号铁杆打几个球，有时球道木杆打几个球，有时又拿一号木杆打几个球。如此对挥杆动作的帮助实在有限。</p>
+          <ul>
+            <li>一.目标练习法: <br>
+              <div class="">
+                每次所有练球数的1/5练P杆，3/5练目标杆，1/5练发球杆。球量2~5盒之间不必多，一天练好一支目标杆，一个星期练好7支杆加上P杆、发球杆共9支杆。当您换一套新球杆，或是矫正动作时请用此法。
+              </div>
+            </li>
+            <li>二.测距练习法: <br>
+              <div class="">
+                换一套新球杆或是新动作时，往往不知道自己的距离。可以在练球场以10球为一个单位，最远及最近2个球不计，以中间个球距离平均，就是此球杆的距离。而距离是以球落点加上10码，就是实际下场距离。
+              </div>
+            </li>
+            <li>三.临场练习法: <br>
+              <div class="">
+                1.暖身。　
+                2.得知当日球路方向与距离。　　
+                此时不能改动作，而必须按当日球路，作出击球策略。练球顺序是由短到长，就是先练推杆、进而铁杆、木杆。在练习场不要有球就打，先空挥一杆再打球果，可以培养出临场节奏感。
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第7天  圣塔巴巴巴拉</h2>
+          <h4>行程描述</h4>
+          <p>上午: 游览酒庄 品酒</p>
+          <p>艺术是一个忠实而又美丽多情的朋友，假如你曾真正迷恋过她，追求过她，热爱过她，她就永远不会离开你。置身于酒庄，一杯葡萄酒，你会让你发现生活原来可以这样美好。</p>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="Winary">
+            </div>
+            <div class="col-md-6">
+              <p>生活是由一个个细节组成的，关注了生活的细节也就是提高了生活的质量。随着社会的进步，有能力追求品位、享受生活的人越来越多，享受物质生活并不是什么罪恶的事情。卡斯顿葡萄酒的世界同样能让你感悟到许多生活的真实。</p>
+              <p>在如何追求品位，享受生活方面，没有必要按照社会的时尚潮流走，更没有必要遵守那些约定俗成，发挥自己的想象力和创造力，生活中处处都有艺术所在。艺术欣赏之要，不在“懂得”，而在“喜欢”。兴趣是最好的老师，就像品尝一瓶葡萄酒，
+                在与其亲密的接触中方能感受到其生命脉搏的跃动。</p>
+            </div>
+          </div>
+          <p>下午: 游览丹麦小镇</p>
+          <div class="row">
+            <img src="" alt="Danmark_city">
+          </div>
+          <p>丹麦小镇位于一号公里上圣芭芭拉县内的一个袖珍小镇，中文名字真的就叫丹麦村，英文名字Solvang，在丹麦的意思是“阳光满溢的田园”，没想到在美国还可以见识到美丽的丹麦风情。 据说，这个地方是1903年三个丹麦籍的美国人买下来的，
+            之后居住在美国中西部、和想念故乡的丹麦移民都聚集到这里，逐步建设成为一个比丹麦更丹麦的小镇，1936年丹麦国王到美国访问时还特意来到这里。 小镇非常甜美安详，家家布置的温馨可人，如果不驻足欣赏一下或是坐下喝杯咖啡，
+            都会觉得对不起生活。这里可以买到很多真正的手工制作品，如比说鞋子，不仅样式精美，质量那是一顶一的好，价格也不贵。</p>
+          <p>这个小镇所有的建筑都是欧洲风格，还有巨大的风车在街角。安静的街上没有什么人，很典型的美国小城镇风格，车少，人少。</p>
+          <p> <img src="" alt="Solvnag" align=left> 在Solvang，观光节目自然离不开逛逛街或Tea一Tea，村内的Cafe选择多不胜数，大多供应新鲜热辣的丹麦酥饼，即使只是凭窗欣赏已令人 口水流。
+            其中的Solvang Restaurant不以酥饼作招徕，反而以一种球状班戟Aebleskiver杀出一条血路，眼见门口食客拿 这些貌似墨鱼丸的茶点，吃得极之开怀，我 不禁往厨房窥看，发现其制法与日式墨丸非常相似，
+            师傅用竹签将班戟反转烤 ，完成后，洒上糖霜及草莓果酱，大啖一口一个，确实香软无比！</p>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第8天  洛杉矶</h2>
+          <h4>行程描述</h4>
+          <div class="row">
+            <img src="" alt="Universal_Studio_1">
+          </div>
+          <p>体验最刺激的电影主题乐园  环球影城一日游</p>
+          <p>好莱坞环球影城位于洛杉矶市区西北郊，是游客到洛杉矶的必游之地。好莱坞是世界著名的影城，20世纪初，一些制片商开始在这里拍片，到1928年已形成了以派拉蒙等八大影片公司为首的强大阵容。</p>
+          <p> <img src="" alt="Universal_Studio_2" align=left> 题公园以世界顶级的过山车为特色，景点则有著名的影城之旅和惊险的金刚360度3D历险。加入影城之旅，您能一探电影的幕后拍摄，并体验全新的“速度与激情——超动力”；金刚360度3D历险则为您带来世界上最壮观、最惊心动魄的3D体验。
+            其它受大众热捧的过山车项目还有：神偷奶爸小黄人3D虚拟过山车以及超级愚乐园、变形金刚3D虚拟过山车、木乃伊复仇过山车SM、侏罗纪公园激流勇进®、辛普森虚拟过山车™（毗邻美国人最喜爱的辛普森一家的故乡——春田镇）。</p>
+          <p>可以在备受喜爱的哈利波特的魔法世界体验魔法的奇妙魅力，或者来全新开幕的行尸走肉鬼屋身临其境感受末日之后的世界。</p>
+        </div>
+
+        <div class="day">
+          <h2 class="day">第9天  洛杉矶</h2>
+          <h4>行程描述</h4>
+          <p>全天游览“世界上最快乐的地方”——迪士尼主题公园，你会发现儿时动画片中出现的各种经典形象，如米老鼠、唐老鸭等等，各种精彩刺激的娱乐项目将使您流连忘返。 </p>
+          <div class="row">
+            <img src="" alt="Disneyland">
+          </div>
+          <p>加州迪士尼乐园位于美国加利福尼亚州阿纳海姆市迪士尼乐园度假区，自1955年7月17日开幕以来，加州迪士尼乐园就成为世界最受欢迎的主题乐园之一，被人们誉为地球上最快乐的地方。以米老鼠为首的迪士尼家族，每年都有新成员加入，加上迪士尼乐园的软硬件不断推陈出新，使得这儿成为观光客前往洛杉矶，
+            绝对不会错过的重要景点。迄今游览过加州迪士尼乐园的游客已经超过5.5亿，这其中包括国家总统、皇室、世界顶级明星。</p>
+          <p>“迪士尼度假休闲区”(Disneyland Resort)的范围主要包括迪士尼乐园、迪士尼加州探险乐园和3间度假酒店等。至于占地广大的园区，共分为8个各具不同特色的主题区，包括探险世界(Adventureland)、未来世界(Tomorrowland)、童话城堡(Fantasyland)、西部垦荒时代(Frontierland)、米奇卡通城(Mickey's Toontown)等等，可说是各具特色。</p>
+          <div class="row">
+            <img src="" alt="Disneyland_2">
+          </div>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第10天  洛杉矶</h2>
+          <h4>行程描述</h4>
+          <p>上午: 乘车参观比弗利山庄，游览好莱坞大道</p>
+          <p>比弗利山庄（Beverly Hills）位于美国洛杉矶，有“全世界最尊贵住宅区”称号，被人们称为财富名利的代表和象征。</p>
+          <div class="row">
+            <div class="col-md-5">
+              <img src="" alt="Beverly_hill">
+            </div>
+            <div class="col-md-7">
+              <p>好莱坞不仅是全球时尚的发源地，也是全球音乐电影产业的中心地带，拥有着世界顶级的娱乐产业和奢侈品牌，引领并代表着全球时尚的最高水平，比如梦工厂、迪士尼、20世纪福克斯、哥伦比亚影业公司、索尼公司、环球影片公司、WB（华纳兄弟）、派拉蒙 等等这些电影巨头，还有像RCAJIVE Interscope Records这样的顶级唱片公司都汇集在好莱坞的范畴之内，
+                这里的时尚与科技互相牵制发展，自然是不造作的，拥有着深厚的时尚底蕴和雄壮的科技做支持，一直被全球各地争相模仿。</p>
+            </div>
+          </div>
+          <p>下午:比弗利购物中心，罗迪欧大道。</p>
+          <div class="row">
+            <div class="col-md-7">
+              <p>比弗利中心是南加州首屈一指的购物中心，地理位置得天独厚，位于比弗利山庄和西好莱坞的交界处，是享誉全球的购物圣地，大牌云集，Bloomingdale和Macy's两家百货巨头也都在这里设店，你还可以经常看到好莱坞明星的身影。明星璀璨的好莱坞使得设计师们也纷纷在此扎根，在比弗利山庄的罗迪欧大道，你不仅可以买到各大奢侈品牌的限量产品，
+                还有众多设计师的高级定制品牌，这里素有“明星衣橱”之称，你可以和好莱坞明星比肩，买到世界上独一无二的高定华服。</p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第11天  圣地亚哥</h2>
+          <h4>行程描述</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="SD_ZOO">
+            </div>
+            <div class="col-md-6">
+              <p>圣地亚哥动物园是全球最大的动物园之一，拥有世界上最先进的管理设施，诸如猎豹、麝香牛等动物展示区人潮如织。由于占地辽阔，参观游客得乘坐巴士绕园参观；巴士分两层，可将四周的无尽原野风光一览无遗，需注意的是巴士并不经过园中人气最旺的“熊猫区”，因其展览位置在动物园的正中央，所以一定要劳驾双腿走路才能朝见这些从中国来的贵宾。
+                由于熊猫实在太稀奇了，为了不过分打扰熊猫的生活起居，每天的展览时间只限三小时。</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p>在这里，游客们不仅能从那些濒临灭绝的物种身上感悟到保护野生动物的责无旁贷，同时还能从比邻而居的海洋水族馆里、从陆地上危机动物的邻居——海洋动物伙伴那里获得一丝丝愉悦的欣慰。动物世界的情形恰如两重天，在这里形成了泾渭分明的强烈反差和鲜明比照，令人振聋发聩。</p>
+            </div>
+            <div class="col-md-6">
+              <img src="" alt="SD_ZOO_2">
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第12天  圣地亚哥</h2>
+          <h4>行程描述</h4>
+          <p>乘车前往圣地亚哥,游览圣地亚哥野生动物园</p>
+          <div class="row">
+            <img src="" alt="Safari_ZOO">
+          </div>
+          <p>在圣地亚哥野生动物园这个2,100英亩的野生保护区内，动物们可以自由得漫步，仿佛在他们自己的野生家园。游客能够通过安静的铁轨进入园区，欣赏外来物种和植物。进入野生动物园，来自非洲的鸟禽会给你带来第一声的问候。几步路的距离便是Nairobi村，它是被蒙巴萨礁湖(Mombasa Lagoon)环绕的热带天堂。
+            这个热闹的村落有许多商店，餐馆，博物馆和活动中心，在这里游客能购物，歇脚，查询地图和计划行程等等。</p>
+          <p>参观时，乘坐Wgasa Bush铁路线，探出脑袋，你能够看到长颈鹿，大象，犀牛，以及数以百计的其他动物群在广阔的天地中自由漫步。其他徒步旅行的区域包括非洲大猩猩栖息地，秃鹰岭和乞力马扎罗山野生动物园等等。野生动物公园展是家庭的很好选择，在这里，你会为大象和鸟类的智慧感到惊讶。道路两旁的数目和植物园为游园增添了景致。</p>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第13天  洛杉矶</h2>
+          <h4>行程描述</h4>
+          <p>上午：Natural History Museum of Los Angeles County 洛杉矶自然历史博物馆</p>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="" alt="Natural_Museum_1">
+            </div>
+            <div class="col-md-4">
+              <img src="" alt="Natural_Museum_2">
+            </div>
+            <div class="col-md-4">
+              <img src="" alt="Natural_Museum_3">
+            </div>
+          </div>
+          <p>杉矶自然历史博物馆（Natural History Museum of Los Angeles County）是美国西部最大的自然历史博物馆，位于洛杉矶，馆藏包括3500万份标本和手工艺品。该博物馆1913年成立时称为历史、科学和艺术博物馆（Museum of History, Science, and Art），1961年分成现在的洛杉矶自然科学博物馆和洛杉矶艺术博物馆，
+            1965年后者搬到维尔雪大道，原址由自然科学博物馆使用，后来自然科学博物馆改名为现在的洛杉矶自然历史博物馆。1975年成为美国国家史迹。这里拥有世界上最丰富而宝贵的自然和文化历史收藏，精美的宝石和矿物，大型栖息地立体模型，古老的拉丁美洲考古宝藏以及幕后故事。</p>
+          <p>下午: 参观洛杉矶艺术博物馆。</p>
+          <div class="row">
+            <img src="" alt="LAMCA_1">
+          </div>
+          <p>洛杉矶艺术博物馆成立于1910年，是美国西海岸最大的百科全书式博物馆，每年约有一百多万人参观。馆内约有10万件展品，从古代至现代的应有尽有。</p>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="LAMCA_2">
+            </div>
+            <div class="col-md-6">
+              <p>洛杉矶艺术博物馆根据地区和时间分为现代与当代艺术展馆、美国和拉丁美洲艺术展馆、亚洲艺术展馆等，具体包括有东亚、东南亚文化，南美洲文明，欧洲、美洲的修饰艺术和绘画艺术，埃及艺术，希腊、罗马以及伊特鲁里亚艺术，这些艺术作品同享同一空间，又各据一隅展现着自己的风采，让人感叹艺术家的无穷智慧。
+                展品包括有服饰、纺织品、绘画作品、照片、雕塑、印刷作品等，让人目不暇接。洛杉矶艺术博物馆每年都会举办代表世界一流水准的季度性、专题性的展览，具有轰动的影响。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <h2 class="title">第14天  中国</h2>
+          <h4>行程描述</h4>
+          <p>顺利抵达祖国，结束美国之旅。</p>
+        </div>
+
+      </div>
+    </main>
+    <footer style="height:300px; background-color:grey">
+    </footer>
+  </body>
+</html>

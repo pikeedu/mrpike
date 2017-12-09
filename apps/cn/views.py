@@ -16,6 +16,18 @@ def service_i20(request):
 def tour(request):
     return render(request, 'cn/tour/tourcn.html')
 
+def esltour(request):
+    return render(request, 'cn/tour/eslla.html')
+
+def esl(request):
+    return render(request, 'cn/tour/esl.html')
+
+def esltwoweeks(request):
+    return render(request, 'cn/tour/twoweeks.html')
+
+def golfandwine(request):
+    return render(request, 'cn/tour/golfandwine.html')
+
 def bootcamp(request):
     return render(request, 'cn/bootcamp/bootcampcn.html')
 
@@ -48,9 +60,6 @@ def contact(request):
 
 def error(request):
     return render(request, 'cn/error/errorcn.html')
-
-def esltour(request):
-    return render(request, 'cn/tour/eslla.html')
 
 def us(request):
     return render(request, 'eng/index/index.html')
