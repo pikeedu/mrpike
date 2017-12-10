@@ -3,8 +3,242 @@
   <head>
     <meta charset="utf-8">
     <title>派克 | 培训</title>
+
+    {% load staticfiles %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'cn/css/bootcamp/usc.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'cn/javascript/master/bootstrap.min.js' %}"></script>
   </head>
   <body>
-    <h1>Bootcamp USC</h1>
+    <header>
+      <div id="top_banner" class="row">
+        <div class="col-md-6">
+          <img id="logo_image" src="./../static/eng/images/logo.png" alt="logo" class="img-thumbnail" width="160" height="250">
+          <h3 id="logo_text">派克 <br>教育</h3>
+        </div>
+
+        <div id="banner_info" class="col-md-6">
+          <div id="banner_right">
+            <div id="banner_contact" style="display:inline-block">
+              <h5><i class="fa fa-envelope" style="font-size:36px"></i>&nbsp;邮箱: <span class="number_email">pike@mrpikeedu.com</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;美国电话: <span class="number_email">1-626-632-6056</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;中国电话: <span class="number_email">95040498706</span></h5>
+              <div id="social_icon">
+                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-facebook-official" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-twitter-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-google-plus" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-youtube-play" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-instagram" style="font-size:36px;color:#1107cc"></i></a>
+              </div>
+            </div>
+
+            <div id="banner_language">
+              <i class="fa fa-language" style="font-size:50px;font-weight:bolder" aria-hidden="true"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="language_link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                选择语言
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/">中文</a>
+                <a class="dropdown-item" href="/us">英文</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">派克主页</a>
+                <a class="nav-item nav-link" href="/service">派克服务</a>
+                <a class="nav-item nav-link" href="/tour">派克游学</a>
+                <a class="nav-item nav-link" href="/bootcamp">派克培训</a>
+                <a id="sos" class="nav-item nav-link" href="/service/i20">紧急应对<i class="material-icons" style="font-size:24px">add_alert</i></a>
+                <a class="nav-item nav-link" href="/aboutus">关于派克</a>
+                <a class="nav-item nav-link" href="/contact">联系派克</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <img src="" alt="USC_LOGO">
+        </div>
+
+        <h1 class="title">南加州大学Marshall商学院＆派克国际教育</h1>
+
+        <h2><b> 全球化革新项目提案</b></h2>
+        <h4>提交于 <br>
+            加利福尼亚州，洛杉矶，高管教育办公室。<br>
+            <b>2017</b>年，<b>9</b>月，<b>1</b>日
+        </h4>
+
+        <h2>中国高管全球化创新</h2>
+        <hr style="height:2em">
+        <p>拟议的课程为三天，将在美国加利福尼亚州洛杉矶，南加州大学的校园。</p>
+        <p>每一个课时，南加大的教授将主讲与行业相关的实践案例，将主题与当前新兴的学术及行业趋势联系起来。并与学员共同讨论中国高管全球化创新模块。</p>
+        <br>
+        <div class="list">
+          <h3>全球化战略</h3>
+          <ul>
+            <li>考察关于市场全球化的性质和程度的证据及其对全球商业战略的影响</li>
+            <li>了解全球商业战略的基本组成部分</li>
+            <li>寻找全球机会，创造全球竞争优势</li>
+          </ul>
+        </div>
+        <br>
+        <div class="list">
+          <h3>全球创新</h3>
+          <ul>
+            <li>了解技术进化</li>
+            <li>了解企业如何跨国创新</li>
+          </ul>
+        </div>
+        <br>
+        <div class="list">
+          <h3>全球营销</h3>
+          <ul>
+            <li>深度了解如何评估全球市场</li>
+            <li>深度了解如何在全球市场上策略性地定位自己</li>
+            <li>准确认识全球市场的文化差异</li>
+            <li>建立超越区域界限的的品牌</li>
+          </ul>
+        </div>
+        <br>
+        <div class="list">
+          <h3>管理全球电子商务</h3>
+          <ul>
+            <li>全球电子商务实践</li>
+            <li>电子商务价值主张和商业模式</li>
+            <li>电子商务管理流程和转型</li>
+          </ul>
+        </div>
+        <br>
+        <div class="calendar">
+          <h3>课时样本</h3>
+          <table>
+            <tr class="head">
+              <th></th>
+              <th>第一天</th>
+              <th>第二天</th>
+              <th>第三天</th>
+            </tr>
+            <tr>
+              <td>8AM-12PM</td>
+              <td>全球化战略</td>
+              <td>全球化革新</td>
+              <td>市场营销全球化</td>
+            </tr>
+            <tr class="head">
+              <td>12PM-1PM</td>
+              <td>中餐</td>
+              <td>中餐</td>
+              <td>中餐</td>
+            </tr>
+            <tr>
+              <td>1PM-5PM</td>
+              <td>全球化战略</td>
+              <td>全球化革新</td>
+              <td>全球化电子商务管理</td>
+            </tr>
+          </table>
+          <br>
+          <h4>结业证书</h4>
+          <p>参与者圆满完成“中国企业家创新计划”后，将获得南加州大学马歇尔商学院的结业证书。</p>
+          <hr style="height:2em">
+        </div>
+        <br>
+        <div class="description">
+          <h3>项目摘要</h3>
+          <br>
+          <p>我们的课程是基于教授和竞争力定制化定价。中国高管全球化创新交付方案的评估成本如下。如果行程发生变化，将讨论额外的费用。</p>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <p>课程报价</p>
+              </div>
+              <div class="col-md-5">
+                <p>南加大USC</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7">
+                <p>3天课程报价（最多30人）</p>
+              </div>
+              <div class="col-md-5">
+                <ul>
+                  <li>参训人数18人，$5800每人</li>
+                  <li>参训人数20人，$5300每人</li>
+                  <li>参训人数30人，$3800每人</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr style="height:2em">
+          <br>
+          <p>该提案包括项目设计和定制，交付和管理，项目材料（如工作薄和教科书）以及翻译设备和服务（用于同步翻译）的所有项目成本，酒店住宿，旅游，地面交通和嘉宾
+          演讲这费用不包括在内，但所有与设施相关的费用（设施，早餐和午餐，休息等）都包括在内。</p>
+        </div>
+        <br>
+        <div class="instructors">
+          <h3>教授团队</h3>
+          <div class="instructor">
+            <h4 class="instructor_name">Kathleen Allen</h4>
+            <div class="row">
+              <div class="col-md-5">
+                <img src="" alt="Kathleen_Allen">
+              </div>
+              <div class="col-md-7">
+                <p>凯瑟琳・艾伦博士（Kathleen Allen)，是USC马歇尔商学院的创业荣誉教授，她创立并领导了USC马歇尔科技商业化中心。她是创业和技术领域多本书籍和期刊文章的作者。
+                  2014年，她被美国小企业和创业协会选为年度创业教育家。她的个人创业活动包括共同创立五家公司，并担任主要航空公司的企业家。她是世界500 强公司的董事会成员，还有几家私人公司。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="instructor">
+            <h4 class="instructor_name">Arvind Bhambri</h4>
+            <div class="row">
+              <div class="col-md-5">
+                <img src="" alt="Arvind_Bhambri">
+              </div>
+              <div class="col-md-7">
+                <p>Arvind Bhambr毕业于哈佛大学专注于战略变革，竞争战略，全球业务发展和领导力。他曾两次获得金苹果奖MBA指导。在2008年“华尔街日报”行政工商管理硕士课程的特别报告中，
+                  Bhambri教授被评为全球最佳 EMBA教授之一。2009年，他获得了Evan C. Thompson学习与教学创新奖。
+                  Bhambri教授曾任博士尼大学盖茨博物馆领导学院，夏威夷大学高级管理课程和波士顿业主管理商学院教授。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="conclusion">
+          <h3>总结</h3>
+          <p>南加大非常感谢有机会与派克国际联合开发和提供高质量以及高影响力的全球创新计划。我们期待我们的商议，进一步完善和修改这个建议，并为您的计划作出必要的安排。</p>
+        </div>
+
+
+
+
+      </div>
+    </main>
+    <footer style="height:300px; background-color:grey">
+
+    </footer>
   </body>
 </html>
