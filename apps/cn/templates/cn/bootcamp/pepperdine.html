@@ -3,8 +3,269 @@
   <head>
     <meta charset="utf-8">
     <title>派克 | 培训</title>
+
+    {% load staticfiles %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'cn/css/bootcamp/pepperdine.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'cn/javascript/master/bootstrap.min.js' %}"></script>
   </head>
   <body>
+    <header>
+      <div id="top_banner" class="row">
+        <div class="col-md-6">
+          <img id="logo_image" src="./../static/eng/images/logo.png" alt="logo" class="img-thumbnail" width="160" height="250">
+          <h3 id="logo_text">派克 <br>教育</h3>
+        </div>
 
+        <div id="banner_info" class="col-md-6">
+          <div id="banner_right">
+            <div id="banner_contact" style="display:inline-block">
+              <h5><i class="fa fa-envelope" style="font-size:36px"></i>&nbsp;邮箱: <span class="number_email">pike@mrpikeedu.com</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;美国电话: <span class="number_email">1-626-632-6056</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;中国电话: <span class="number_email">95040498706</span></h5>
+              <div id="social_icon">
+                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-facebook-official" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-twitter-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-google-plus" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-youtube-play" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-instagram" style="font-size:36px;color:#1107cc"></i></a>
+              </div>
+            </div>
+
+            <div id="banner_language">
+              <i class="fa fa-language" style="font-size:50px;font-weight:bolder" aria-hidden="true"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="language_link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                选择语言
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/">中文</a>
+                <a class="dropdown-item" href="/us">英文</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">派克主页</a>
+                <a class="nav-item nav-link" href="/service">派克服务</a>
+                <a class="nav-item nav-link" href="/tour">派克游学</a>
+                <a class="nav-item nav-link" href="/bootcamp">派克培训</a>
+                <a id="sos" class="nav-item nav-link" href="/service/i20">紧急应对<i class="material-icons" style="font-size:24px">add_alert</i></a>
+                <a class="nav-item nav-link" href="/aboutus">关于派克</a>
+                <a class="nav-item nav-link" href="/contact">联系派克</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <!-- TODO: image PHOTOshop -->
+        <img src="" alt="pepperdine_banner">
+
+        <div class="headline">
+          <h1>了解如何保障和分配资本投资</h1>
+          <h2>私人资本市场教育课程<br>目的是让学生了解私人资本市场和企业价值所需的深入技能</h2>
+        </div>
+        <div class="who">
+          <div class="row">
+            <div class="col-md-5">
+              <h4>建议参加的人士</h4>
+              <ul>
+                <li>企业持有人，顾问，律师和负责为其组织确保私人资本投资的中高级管理人员</li>
+                <li>有兴趣获得在私人资本市场行业取得成功所需的知识，技能和见解的商业和金融专业人士</li>
+              </ul>
+            </div>
+            <div class="col-md-7">
+              <h3>关于Pepperdine Graziadio商业管理学院</h3>
+              <p>我们用正确的价值观为基础的教育方法，以我们的教育使命为基础，使学生成为21世纪优秀的领导和管理者。</p>
+              <p>学院培养学生成为各自领域的变革者和影响者而闻名，学院获得了美国商学院协会（Association to Advance Collegiate Schools of Business,AACSB）的认证，是美国最具实力的商学院之一。</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructor">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="Craig R. Everett">
+            </div>
+            <div class="col-md-6">
+              <h3>Craig R. Everett</h3>
+              <p>Craig R. Everett是Pepperdine大学Graziadio商学院管理学院财务助理教授，Pepperdine私人资本市场项目主任。他的教学和研究兴趣包括创业金融，私人资本
+                  市场，企业估值和行为公司融资。
+              </p>
+              <p>除了杰出的教师之外，学生还将从行业专家中受益。</p>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <h3>项目介绍：</h3>
+          <ul>
+            <li>了解并对私人市场的主要资金来源进行深入分析：天使投资，风险投资，夹层，私募股权，银行贷款，资产支持贷款和保理业务</li>
+            <li>研究资本提供者如何评估风险，以及如何确定谁符合资本和资金来源</li>
+            <li>了解资本提供者如何评估私人企业以及企业主如何运作以提高估值</li>
+            <li>确定主要资本来源的优缺点</li>
+          </ul>
+        </div>
+
+        <div class="calendar">
+          <h3>课程时间安排</h3>
+          <div class="day">
+            <h3>第一天</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">8:00 - 8:30AM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">入学欢迎&早餐</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">8:00 - 8:30AM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">入学欢迎&早餐</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">8:30 - 8:45AM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">课程介绍</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">8:45 - 12:30PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">	课程一<br>私人资本市场概述一理论与实践</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">12:30 - 1:30PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">午餐</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">1:30 - 5:00PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">课程二<br>私募股权资本</span>
+              </div>
+            </div>
+          </div>
+          <div class="day">
+            <h3>第二天</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">8:00 - 8:30AM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">早餐</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">8:30 - 12:00PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">课程三<br>天使投资，风险投资和其他早期融资来源</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">12:00 - 1:00PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">午餐</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">1:00 - 5:00PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">课程四<br>高级债务（包括现金流量和资产贷款和保理</span>
+              </div>
+            </div>
+          </div>
+          <div class="day">
+            <h3>第三天</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">8:00 - 8:30AM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">早餐</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">8:30 - 11:45AM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">课程五<br>用Pepperdine数据确定资本成本和案例研究结论</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">11:45 - 12:30PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">午餐</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">12:30 - 2:45PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">课程六<br>夹层资本</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">2:45 - 4:45PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">课程七<br>投资银行</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="time">4:45PM</span>
+              </div>
+              <div class="col-md-8">
+                <span class="arrangement">课程结束仪式</span>
+              </div>
+            </div>
+          </div>
+          <p>*具体时间地点会依据时间地点有所改变，我们会及时通知</p>
+        </div>
+      </div>
+    </main>
+    <footer style="height:300px; back-color:grey">
+
+    </footer>
   </body>
 </html>

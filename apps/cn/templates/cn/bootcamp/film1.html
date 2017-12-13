@@ -3,17 +3,172 @@
   <head>
     <meta charset="utf-8">
     <title>派克 | 培训</title>
+
+    {% load staticfiles %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'eng/css/master/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'cn/css/bootcamp/film1.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'cn/javascript/master/bootstrap.min.js' %}"></script>
   </head>
   <body>
     <header>
-      <h1>Header</h1>
+      <div id="top_banner" class="row">
+        <div class="col-md-6">
+          <img id="logo_image" src="./../static/eng/images/logo.png" alt="logo" class="img-thumbnail" width="160" height="250">
+          <h3 id="logo_text">派克 <br>教育</h3>
+        </div>
+
+        <div id="banner_info" class="col-md-6">
+          <div id="banner_right">
+            <div id="banner_contact" style="display:inline-block">
+              <h5><i class="fa fa-envelope" style="font-size:36px"></i>&nbsp;邮箱: <span class="number_email">pike@mrpikeedu.com</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;美国电话: <span class="number_email">1-626-632-6056</span></h5>
+              <h5><i class="fa fa-phone" style="font-size:36px"></i>&nbsp;中国电话: <span class="number_email">95040498706</span></h5>
+              <div id="social_icon">
+                <a class="social_icon" href="https://www.facebook.com/PikeInternational/"><i class="fa fa-facebook-official" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-twitter-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-google-plus" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-linkedin-square" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-youtube-play" style="font-size:36px;color:#1107cc"></i></a>
+                <a class="social_icon" href="#"><i class="fa fa-instagram" style="font-size:36px;color:#1107cc"></i></a>
+              </div>
+            </div>
+
+            <div id="banner_language">
+              <i class="fa fa-language" style="font-size:50px;font-weight:bolder" aria-hidden="true"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="language_link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                选择语言
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/">中文</a>
+                <a class="dropdown-item" href="/us">英文</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">派克主页</a>
+                <a class="nav-item nav-link" href="/service">派克服务</a>
+                <a class="nav-item nav-link" href="/tour">派克游学</a>
+                <a class="nav-item nav-link" href="/bootcamp">派克培训</a>
+                <a id="sos" class="nav-item nav-link" href="/service/i20">紧急应对<i class="material-icons" style="font-size:24px">add_alert</i></a>
+                <a class="nav-item nav-link" href="/aboutus">关于派克</a>
+                <a class="nav-item nav-link" href="/contact">联系派克</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
-      <h1>Film1 Bootcamp</h1>
-      Gnomon电影学院简介 Gnomon是一家私立性质学院。 为视觉效果和游戏行业的职业提供艺术和技术培训。
-      Gnomon于1997年由Alex Alvarez创立，总部位于加利福尼亚州好莱坞。
-      Gnomon最初的设计是为了满足行业艺术家的培训需求，Gnomon已经发展成为一个更加全面的艺术学校，为那些希望成为电影和游戏专业艺术家的人提供结构化的课程和个人课程。
-
+      <div class="container">
+        <div class="row">
+          <img src="" alt="Gnomon_Banner">
+        </div>
+        <h1>Gnomon  -- <br>电影学院简介 </h1>
+        <div class="row">
+          <div class="col-md-6">
+             <img src="" alt="Gnomon_1" align=left>
+          </div>
+          <div class="col-md-6">
+            <p>Gnomon 是一家私立性质学院。</p>
+            <p>为视觉效果和游戏行业的职业提供艺术和技术培训。Gnomon于1997年由Alex Alvarez创立，总部位于加利福尼亚州好莱坞。
+              Gnomon最初的设计是为了满足行业艺术家的培训需求，Gnomon已经发展成为一个更加全面的艺术学校，为那些希望成为电影和游戏专业艺术家的人提供结构化的课程和个人课程。
+            </p>
+          </div>
+        </div>
+        <p>好莱坞 Gnomon 视觉艺术学校是培养视觉特效和电视游戏艺术开发者的专业学校，在北美地区久负盛名， 他们的老师都是来自顽皮狗和暴雪这样业界知名的大公司。
+          学校刚刚公布了 2015 年学生作品集锦，也许 他们中的一些人未来就会成为游戏视觉领域的开发者。
+        </p>
+        <p>所有的 Gnomon 的导师都是各大影视制作公司的在职的工作人员，如暴雪娱乐，淘气狗，梦工厂，工业光 和魔术，索尼影像，迪斯尼和数字域。
+          Gnomon 毕业生已经在电影和游戏工作室工作，如 Digital Domain, EA, Weta Digital，Double Negative，Zoic Studios，Sony Interactive，Rhythm & Hues 等。
+        </p>
+        <div class="row">
+          <img src="" alt="Gnomon_MIT_Banner">
+        </div>
+        <div class="digital_production">
+          <h2>Digital Production 数字媒体技术</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="Digital_Production_1">
+            </div>
+            <div class="col-md-6">
+              <p>数字媒体技术专业方向旨在培养具有 国际视野，熟悉国内外相关行业的发展 趋势，具有先进的游戏设计理念、设计 思想，熟悉各种游戏类型，熟悉游戏设 计流程，
+                具有扎实的数字媒体技术基础 理论、宽厚的专业技术基础、较强的逻 辑思维能力和的程序开发能力，具有较 强的游戏创作实践能力，能够从事游戏 程序设计、游戏数值及逻辑策划、游戏 项目管理等工作的高级复合型人才。
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p>数字媒体与传统媒体相比拥有不同的特质，因此新数字媒体的创建、管理、分发和交易则需要一些与传统不一样的硬件、软件和服务。</p>
+            </div>
+            <div class="col-md-6">
+              <img src="" alt="Digtial_Production_2">
+            </div>
+          </div>
+          <h3>主要课程</h3>
+          <p>摄影摄像技术、艺术设计基础、数字媒体技术概论、程序设计基础、数据库设计、网页设计与制作、交互式多媒体网站开发、数字信号处理、数据结构、算法设计与分析、面向对象程序设计(java)、
+            计算机图形图像处理、人机交互技术、多媒体数据库、动画设计与制作、3D 造型、电视节目编导与制作、音视频信息处理、特效制作与非线性编辑等。
+          </p>
+          <div class="row">
+            <img src="" alt="Digital_Production_3">
+          </div>
+        </div>
+        <div class="character_design">
+          <h2>Character Design 人物特征设计</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="character_design_1">
+            </div>
+            <div class="col-md-6">
+              <p>在电影摄制中以形、光、色表现人、景、物具体特质，塑造形像，引导观众对影片的理解。</p>
+              <p>电影美术师在影片创作过程中，最先把文学剧本中关于环境、面容、服饰等文字描写转化为具体形像，以剧本的主题思想、人物性格、剧情结构为依据，在电影导演的总体构思之下，与影片创作各部门，
+                首先是与摄影师及演员合作，共同完成影片的造型表现，设计和制作有时代、地域特点，有生活气息，有性格特征的 人、景、物，以产生情景交融的富有意境的艺术效果。
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- TODO: document image, the one with text  -->
+            <img src="" alt="character_design_2">
+          </div>
+        </div>
+        <div class="game_design">
+          <h2>Game Design 游戏设计</h2>
+          <p>游戏设计或游戏策划是设计游戏内容和规则的一个过程，好的游戏设计是这样一个过程:创建能激起玩家通关热情的目标，以及玩家在追求这些目标时做出的有意义的决定需遵循的规则。
+            这个术语同时也可以表示游戏实际设计中的具体实现和描述设计细节的文档。游戏设计涉及到好几个范畴 :游戏规则及玩法、视觉艺术、编 程、产品化、声效、编剧、游戏角色、道具、
+            场景、界面以上的元素都是一个游戏设计专案所需要的。
+          </p>
+          <div class="row">
+            <img src="" alt="game_design_banner">
+          </div>
+          <h4>游戏设计课程</h4>
+          <p>创作一个游戏人物、场景的主要流程是:原画创作、建模、材质、灯光及渲染、骨骼设定、动画、特效等部分。</p>
+          <p> <img src="" alt="game_design_1" align=left> MAEC 代表是动漫制作过程中的四个重要应 用方面，M 代表 Modeling(建模)，A 代表 Animation(动画)，E 代表 Effects(特 效)，
+            C 代表 Compositing(后期合成)。 MAEC 全科课程针对基础较差的学员，对 MAEC 中的 B 模块(basic)进行了一定的加 强，学习过程中会涉及到 MAEC 的四个专业 模块，
+            在学习的过程中对学员的兴趣以及就 业方向再来进行引导。
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="game_design_2">
+            </div>
+            <div class="col-md-6">
+              <img src="" alt="game_design_3">
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer style="background-color:grey;height:250px">
 
