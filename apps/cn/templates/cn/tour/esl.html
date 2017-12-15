@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'cn/javascript/master/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'cn/javascript/tour/esl.js' %}"></script>
   </head>
   <body>
     <header>
@@ -75,7 +76,7 @@
     <main>
       <div class="container">
         <h2 id="the_title">英文强化&高尔夫集训游学体验营</h2>
-        <h4>英语强化的目的就是为了满足学生对英语的追求并帮助他们通过直接与外籍本土教师的互动学习的方式达到更高级的英语水平。由专业教师带领的小班制教学，能够满足每位孩子对英语学习各方面的需求。</h4>
+        <h4 id="desc">英语强化的目的就是为了满足学生对英语的追求并帮助他们通过直接与外籍本土教师的互动学习的方式达到更高级的英语水平。由专业教师带领的小班制教学，能够满足每位孩子对英语学习各方面的需求。</h4>
         <br>
         <div class="intro">
           <p>英语强化集训营最大的优势就在于它给予营员一个遇见来自不同国家的小伙伴和工作人员，并融入其中，同时锻炼自己的英语能力的机会。所有派克国际教育提供的夏令营都是“英语”学习营，因此营员需要全程使用英语交流。我们也期望营员和来自不同国家的其他营员一起参与到活动中去。
@@ -117,16 +118,16 @@
           <p>学生一旦入学，他们将得到加州州立大学-北岭分校英文老师的评估，按照其能力和水平安排到相应的班级。在各自的小群体里，通过老师的安排发展计划训练，结交着新的同学朋友。</p>
           <br>
           <div class="advantage">
-            <div class="row">
+            <div id="top" class="row">
               <div class="col-md-7">
                 <img src="" alt="advantage_image">
               </div>
               <div class="col-md-5">
                 <ul>
-                  <li>♥	语音课</li>
-                  <li>♥	写作/语法</li>
-                  <li>♥	阅读</li>
-                  <li>♥	口语表述</li>
+                  <li>语音课</li>
+                  <li>写作/语法</li>
+                  <li>阅读</li>
+                  <li>口语表述</li>
                 </ul>
               </div>
             </div>
@@ -268,7 +269,7 @@
                   <td>熄灯</td>
                 </tr>
               </table>
-              *由于考虑到不确定性因素，时间行程安排会根据实际情况做调整
+              <h6 id="notification">*由于考虑到不确定性因素，时间行程安排会根据实际情况做调整</h6>
             </div>
           </div>
           <div class="weekend">

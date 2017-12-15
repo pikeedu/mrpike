@@ -12,3 +12,26 @@
   width: 15%;
   margin: auto;
 }
+
+#the_title{
+  text-align: center;
+  padding: 3%;
+}
+
+.day{
+  padding: 3%;
+}
+
+.day h2{
+  text-align: center;
+  padding: 2%;
+}
+
+.day h4{
+  padding: 1%;
+}
+
+.day p{
+  padding: 2%;
+  text-align: justify;
+}

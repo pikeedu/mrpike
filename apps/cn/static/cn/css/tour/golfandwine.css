@@ -13,8 +13,34 @@
   margin: auto;
 }
 
+#the_title{
+  text-align: center;
+  padding: 3%;
+}
+
 .day{
-  background-color: lightgrey;
   padding: 2%;
   margin: 1%
+}
+
+.day h2{
+  text-align: center;
+  padding: 2%;
+}
+
+.day h4{
+  padding: 1%;
+}
+
+.day p{
+  padding: 2%;
+  text-align: justify;
+}
+
+.col-md-5{
+  padding: 2%;
+}
+
+.col-md-7{
+  padding: 2%;
 }
