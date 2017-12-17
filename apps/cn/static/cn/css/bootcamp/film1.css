@@ -12,3 +12,38 @@
   width: 15%;
   margin: auto;
 }
+
+h1{
+  text-align: center;
+  padding: 2%;
+}
+
+.row{
+  padding: 2%;
+  margin: 1% 0 1% 0;
+}
+
+P{
+  padding: 2%;
+  margin: 1% 0 1% 0;
+}
+
+h2{
+  text-align: center;
+  padding: 1%;
+}
+
+.digital_production{
+  padding: 1%;
+  margin: 1% 0 1% 0;
+}
+
+h3{
+  text-align: center;
+  padding: 1%;
+}
+
+h4{
+  text-align: center;
+  padding: 1%;
+}

@@ -12,3 +12,40 @@
   width: 15%;
   margin: auto;
 }
+
+.intro{
+  padding: 2%;
+  margin: 1% 0 1% 0;
+}
+
+.intro h2 {
+  text-align: center;
+  padding: 1%
+}
+
+.intro h3 {
+  text-align: center;
+  padding: 1%
+}
+
+.intro p{
+  padding: 2%;
+  text-align: justify;
+}
+
+.production{
+  padding: 2%;
+  margin: 1% 0 1% 0;
+}
+
+.production h2 {
+  text-align: center;
+  padding: 1%;
+  margin: 1% 0 1% 0;
+}
+
+.production p{
+  text-align: justify;
+  padding: 1%;
+  margin: 1% 0 1% 0;
+}
